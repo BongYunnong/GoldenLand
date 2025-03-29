@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -67,7 +68,7 @@ public class PerceptionComponent : MonoBehaviour
 
     private Animator animator;
 
-    FieldOfPerception fieldOfPerception;
+    private FieldOfPerception fieldOfPerception;
     public FieldOfPerception FieldOfPerception { get { return fieldOfPerception; } }
 
     [SerializeField]
@@ -80,12 +81,11 @@ public class PerceptionComponent : MonoBehaviour
 
     [SerializeField] List<SpriteRenderer> directionArrowSprites = new List<SpriteRenderer>();
 
-    public void InitializePerceptionComponent(Character character)
+    private void Start()
     {
-        ownerCharacter = character;
-
+        ownerCharacter = GetComponentInParent<Character>();
+        
         fieldOfPerception = GetComponent<FieldOfPerception>();
-
         animator = GetComponent<Animator>();
 
         ResetRecognitionData();

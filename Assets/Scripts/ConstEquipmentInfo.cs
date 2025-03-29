@@ -16,7 +16,7 @@ public class ConstEquipmentPresetInfo
     public string LowerBody;
     public string BackStuff;
     public string HandStuff;
-/*
+
     public ConstEquipmentPresetInfo(EquipmentPresetDataSet.TableData data)
     {
         this.id = data.ID;
@@ -32,7 +32,6 @@ public class ConstEquipmentPresetInfo
         this.BackStuff = data.BackStuff;
         this.HandStuff = data.HandStuff;
     }
-    */
 }
 
 
@@ -44,7 +43,7 @@ public class ConstEquipmentInfo
 
     public List<Sprite> sprites = new List<Sprite>();
     public List<string> effects = new List<string>();
-/*
+    
     public ConstEquipmentInfo(EquipmentDataSet.TableData data)
     {
         this.id = data.ID;
@@ -62,6 +61,5 @@ public class ConstEquipmentInfo
         }
         this.effects = data.Effects;
     }
-    */
 }
 

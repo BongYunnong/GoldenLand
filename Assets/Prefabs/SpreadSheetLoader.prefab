@@ -52,4 +52,49 @@ MonoBehaviour:
   - SheetName: EquipmentPresetDataSet
     Range: A1:L
     SheetID: 1181959853
+  - SheetName: BookDataSet
+    Range: A1:I
+    SheetID: 940955172
+  - SheetName: WeaponDataSet
+    Range: A1:I
+    SheetID: 833518545
+  - SheetName: ActionInputDataSet
+    Range: A1:B
+    SheetID: 308242120
+  - SheetName: ActionDataSet
+    Range: A1:T
+    SheetID: 1051090349
+  - SheetName: ActionModifierDataSet
+    Range: A1:F
+    SheetID: 951003125
+  - SheetName: ActionEffectDataSet
+    Range: A1:K
+    SheetID: 1450401175
+  - SheetName: ActionAreaDataSet
+    Range: A1:F
+    SheetID: 1467383668
+  - SheetName: StatusEffectDataSet
+    Range: A1:I
+    SheetID: 437652343
+  - SheetName: EffectGroupDataSet
+    Range: A1:C
+    SheetID: 359506830
+  - SheetName: EffectGroupDataSet
+    Range: A1:C
+    SheetID: 359506830
+  - SheetName: VisualEffectDataSet
+    Range: A1:C
+    SheetID: 1841169457
+  - SheetName: SoundDataSet
+    Range: A1:G
+    SheetID: 89510250
+  - SheetName: AnimationClipDataSet
+    Range: A1:B
+    SheetID: 519834831
+  - SheetName: ExtraInfoDataSet
+    Range: A1:C
+    SheetID: 1949774065
+  - SheetName: ExtraGameObjectDataSet
+    Range: A1:B
+    SheetID: 657907509
   Path: /DataTables/

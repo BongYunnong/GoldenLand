@@ -21,8 +21,16 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
 
     [SerializeField] private CinemachineVirtualCamera mainVirtualCamera;
     public CinemachineVirtualCamera MainVirtualCamera { get { return mainVirtualCamera; } }
+    [SerializeField]
+    private CinemachineBrain cinemachineBrain;
+    public CinemachineBrain CinemachineBrain { get { return cinemachineBrain; } }
+    
     private CinemachineConfiner cameraConfiner;
 
+    [SerializeField]
+    private MainCameraComponent mainCameraComp;
+    public MainCameraComponent MainCameraComp { get { return mainCameraComp; } }
+    
     private Transform pendingCamTarget;
     
     private Transform cursor;
@@ -197,10 +205,26 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
 #else
         if (IsCameraMoveBlocked() == false)
         {
+            /*
             Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             if(input.sqrMagnitude > 0)
             {
                 MoveCamera((Vector3)(camMoveSpeed * input * Time.deltaTime));
+            }
+            */
+            
+            Vector3 input = MainCameraComp.VirtualCamera.transform.right * Input.GetAxis("Horizontal") +
+                            Vector3.ProjectOnPlane(MainCameraComp.VirtualCamera.transform.forward, Vector3.up).normalized * Input.GetAxis("Vertical");
+            if (MainCameraComp.VirtualCamera.LookAt == null)
+            {
+                MainCameraComp.VirtualCamera.transform.position += (camMoveSpeed * input.normalized * Time.deltaTime);
+                if (cameraConfiner)
+                {
+                    float tmpX = Mathf.Clamp(MainCameraComp.VirtualCamera.transform.position.x, cameraConfiner.m_BoundingVolume.bounds.min.x, cameraConfiner.m_BoundingVolume.bounds.max.x);
+                    float tmpY = Mathf.Clamp(MainCameraComp.VirtualCamera.transform.position.y, cameraConfiner.m_BoundingVolume.bounds.min.y, cameraConfiner.m_BoundingVolume.bounds.max.y);
+                    float tmpZ = Mathf.Clamp(MainCameraComp.VirtualCamera.transform.position.z, cameraConfiner.m_BoundingVolume.bounds.min.z, cameraConfiner.m_BoundingVolume.bounds.max.z);
+                    MainCameraComp.VirtualCamera.transform.position = new Vector3(tmpX, tmpY, tmpZ);
+                }
             }
         }
         if (IsCameraZoomBlocked() == false)
@@ -515,7 +539,7 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
     {
         GameManager gameManager = GameManager.GetInstance();
         if (gameManager == null) return;
-        MainCameraComponent mainCamComp = gameManager.MainCameraComp;
+        MainCameraComponent mainCamComp = MainCameraComp;
         /* TODO
         MovieDirectorManager movieDirector = MovieDirectorManager.GetInstance();
         if (InTransform == null)

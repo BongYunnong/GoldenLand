@@ -175,6 +175,20 @@ public class DataManager : PersistentSingletonMonoBehavior<DataManager>
         SetupEquipmentPresetDataSet();
         SetupEquipmentDataSet();
 
+        SetupBookDataSet();
+        SetupWeaponDataSet();
+        
+        SetupActionInputDataSet();
+        SetupActionModifierDataSet();
+        SetupActionEffectDataSet();
+        SetupActionAreaDataSet();
+
+        SetupStatusEffectDataSet();
+        
+        SetupAnimationClipDictDataSet();
+        SetupSoundDataSet();
+        SetupVisualEffectDataSet();
+        
         SetupExtraInfoDataSet();
         SetupExtraGameObjectDataSet();
 
@@ -185,13 +199,12 @@ public class DataManager : PersistentSingletonMonoBehavior<DataManager>
     private void SetupEquipmentPresetDataSet()
     {
         equipmentPresetDict.Clear();
-        /*
+        
         foreach (var equipmentPresetData in EquipmentPresetDataSet.Instance.datas)
         {
             ConstEquipmentPresetInfo equipmentPresetInfo = new ConstEquipmentPresetInfo(equipmentPresetData);
             equipmentPresetDict.Add(equipmentPresetInfo.id, equipmentPresetInfo);
         }
-        */
     }
     
     private void SetupEquipmentDataSet()
@@ -202,25 +215,124 @@ public class DataManager : PersistentSingletonMonoBehavior<DataManager>
         {
             equipmentTypeDict.Add(type, new Dictionary<string, ConstEquipmentInfo>());
         }
-/*
+        
         foreach (var equipmentData in EquipmentDataSet.Instance.datas)
         {
             ConstEquipmentInfo equipmentInfo = new ConstEquipmentInfo(equipmentData);
             equipmentDict.Add(equipmentData.ID, equipmentInfo);
             equipmentTypeDict[equipmentData.EquipmentType].Add(equipmentData.ID, equipmentInfo);
         }
-        */
     }
 
+    private void SetupBookDataSet()
+    {
+        bookDict.Clear();
+
+        foreach (var bookData in BookDataSet.Instance.datas)
+        {
+            ConstBookInfo bookInfo = new ConstBookInfo(bookData);
+            bookDict.Add(bookData.ID, bookInfo);
+        }
+    }
+    private void SetupWeaponDataSet()
+    {
+        weaponDict.Clear();
+
+        foreach (var weaponData in WeaponDataSet.Instance.datas)
+        {
+            ConstWeaponInfo weaponInfo = new ConstWeaponInfo(weaponData);
+            weaponDict.Add(weaponData.ID, weaponInfo);
+        }
+    }
+
+    private void SetupActionInputDataSet()
+    {
+        actionInputDict.Clear();
+
+        foreach (var actionInputData in ActionInputDataSet.Instance.datas)
+        {
+            ConstActionInputInfo actionInputInfo = new ConstActionInputInfo(actionInputData);
+            actionInputDict.Add(actionInputData.ID, actionInputInfo);
+        }
+    }
+
+    private void SetupActionModifierDataSet()
+    {
+        actionModifierDict.Clear();
+        foreach (var actionModifierData in ActionModifierDataSet.Instance.datas)
+        {
+            ConstActionModifierInfo actionModifierInfo = new ConstActionModifierInfo(actionModifierData);
+            actionModifierDict.Add(actionModifierInfo.id, actionModifierInfo);
+        }
+    }
+    
+    private void SetupActionEffectDataSet()
+    {
+        actionEffectDict.Clear();
+        foreach (var actionEffectData in ActionEffectDataSet.Instance.datas)
+        {
+            ConstActionEffectInfo actionEffectInfo = new ConstActionEffectInfo(actionEffectData);
+            actionEffectDict.Add(actionEffectInfo.ID, actionEffectInfo);
+        }
+    }
+    
+    private void SetupActionAreaDataSet()
+    {
+        actionAreaDict.Clear();
+        foreach (var actionAreaData in ActionAreaDataSet.Instance.datas)
+        {
+            ConstActionAreaInfo actionAreaInfo = new ConstActionAreaInfo(actionAreaData);
+            actionAreaDict.Add(actionAreaInfo.Id, actionAreaInfo);
+        }
+    }
+    
+    private void SetupStatusEffectDataSet()
+    {
+        statusEffectDict.Clear();
+
+        foreach (var statusEffectData in StatusEffectDataSet.Instance.datas)
+        {
+            ConstStatusEffectInfo statusEffectInfo = new ConstStatusEffectInfo(statusEffectData);
+            statusEffectDict.Add(statusEffectData.ID, statusEffectInfo);
+        }
+    }
+    
+    private void SetupAnimationClipDictDataSet()
+    {
+        animationClipDict.Clear();
+        foreach (var animationClipData in AnimationClipDataSet.Instance.datas)
+        {
+            ConstAnimationClipInfo animationClipInfo = new ConstAnimationClipInfo(animationClipData);
+            animationClipDict.Add(animationClipData.ID, animationClipInfo);
+        }
+    }
+    private void SetupVisualEffectDataSet()
+    {
+        visualEffectDict.Clear();
+        foreach (var visualEffectData in VisualEffectDataSet.Instance.datas)
+        {
+            ConstVisualEffefctInfo visualEffefctInfo = new ConstVisualEffefctInfo(visualEffectData);
+            visualEffectDict.Add(visualEffectData.ID, visualEffefctInfo);
+        }
+    }
+    private void SetupSoundDataSet()
+    {
+        soundDict.Clear();
+        foreach (var soundData in SoundDataSet.Instance.datas)
+        {
+            ConstSoundInfo soundInfo = new ConstSoundInfo(soundData);
+            soundDict.Add(soundData.ID, soundInfo);
+        }
+    }
+
+    
     private void SetupExtraInfoDataSet()
     {
         extraInfoDict.Clear();
-        /*
         foreach (var extraSpriteData in ExtraInfoDataSet.Instance.datas)
         {
             extraInfoDict.Add(extraSpriteData.ID, new LocalizedStructInfoBase(extraSpriteData.ID, extraSpriteData.SpritePath.GetSprite(), extraSpriteData.StringTableKey));
         }
-        */
     }
     private void SetupExtraGameObjectDataSet()
     {

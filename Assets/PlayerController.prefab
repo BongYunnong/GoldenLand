@@ -146,8 +146,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892319932538407114}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.1, y: 9.6, z: -10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ConfineMode: 0
+  m_ConfineMode: 1
   m_BoundingVolume: {fileID: 0}
   m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 2379710941084772999}
   - component: {fileID: 5109678098624891795}
   - component: {fileID: 8085864494181601238}
+  - component: {fileID: 6510335829355859481}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -283,12 +284,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5166450a951da914d9835148cfa23d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultPlayerCharacter: {fileID: 0}
+  defaultPlayerCharacter: {fileID: 0}
+  mainVirtualCamera: {fileID: 6271837489409923396}
+  cinemachineBrain: {fileID: 0}
+  mainCameraComp: {fileID: 6510335829355859481}
   cursorPrefab: {fileID: 9196255955934535664}
   effectCanvas: {fileID: 0}
   clickTargetLayer:
     serializedVersion: 2
     m_Bits: 128
+  camMoveSpeed: 20
+  zoomSpeed: 2
+  camScaleMinMax: {x: 5, y: 15}
 --- !u!114 &5109678098624891795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,6 +338,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6510335829355859481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372898484071654947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92946af0ac433014dbcfb85bcce5e67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCamera: {fileID: 6271837489409923396}
+  effectCamera: {fileID: 0}
 --- !u!1 &9183473890294287586
 GameObject:
   m_ObjectHideFlags: 0

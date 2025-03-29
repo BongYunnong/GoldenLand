@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5982ac69c9806042a281d6d870f72bd, type: 3}
+  m_Name: BookDataSet
+  m_EditorClassIdentifier: 
+  datas:
+  - ID: BK_Test001
+    CharacterId: CD_Player
+    EquipmentPresetId: Player_Base
+    CoverImagePath:
+      path: Assets/Sprites/Book/BookCover.png
+      subName: 
+    Tool: Base
+    AttackRapidCooldownTime: 0.2
+    ActionKeyBinding:
+    - Attack_Base=BaseAction
+    - Attack_Base01=BaseAction
+    - Attack_Base02=BaseAction
+    - ContinuousFireAttack_Base=BaseActionHold
+    - Guard_Base=SubActionHold
+    - Skill_Base=CastAction0
+    - Dodge_Base=Dodge
+    - Reload_Base=Reload
+    - Interact_Base=Interact
+    - Cancel_Base=Cancel
+    PatternGroupId: BlueNovility
+    PersonalityIds:
+    - PD_Test

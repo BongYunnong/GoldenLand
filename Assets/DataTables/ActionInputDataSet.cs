@@ -19,11 +19,7 @@ public class ActionInputDataSet : SingletonScriptableObject<ActionInputDataSet>
 	public class TableData
 	{
 		public string ID;
-		public bool Use;
 		public EInputAction InputAction;
-		public string PrimaryKey;
-		// public EInputTrigger TriggerType;
-		public List<string> TriggerParams;
 	}
 
 	public void AddData(TableData data)

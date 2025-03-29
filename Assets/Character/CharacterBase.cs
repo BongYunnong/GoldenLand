@@ -243,6 +243,7 @@ public class CharacterBase : MonoBehaviour
     [Header("[Character - Movement]")]
     public bool CanGetInput = true;
     protected Vector2 moveInput;
+    public Vector2 MoveInput { get { return moveInput; } }
     protected bool[] mInputs = new bool[(int)EInputAction.MAX];
     protected bool[] mPrevInputs = new bool[(int)EInputAction.MAX];
 

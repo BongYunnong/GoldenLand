@@ -1,0 +1,255 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d25debc6a2392448aa9ad5fc3421627, type: 3}
+  m_Name: ExtraInfoDataSet
+  m_EditorClassIdentifier: 
+  datas:
+  - ID: None
+    SpritePath:
+      path: Assets/CleanFlatUI/Textures/icon/icon_close.png
+      subName: 
+    StringTableKey: ST_Lobby
+  - ID: Background001
+    SpritePath:
+      path: Assets/Sprites/Texture/T_Noise_01.png
+      subName: 
+    StringTableKey: ST_Lobby
+  - ID: Money
+    SpritePath:
+      path: Assets/Sprites/UI/LobbyIcon.png
+      subName: LobbyIcon_8
+    StringTableKey: ST_Lobby
+  - ID: Energy
+    SpritePath:
+      path: Assets/Sprites/UI/Page.png
+      subName: 
+    StringTableKey: ST_Lobby
+  - ID: Population
+    SpritePath:
+      path: Assets/Sprites/UI/LobbyIcon.png
+      subName: LobbyIcon_3
+    StringTableKey: ST_Lobby
+  - ID: Class0
+    SpritePath:
+      path: Assets/Sprites/Icons/Class.png
+      subName: Class_0
+    StringTableKey: 
+  - ID: Extra
+    SpritePath:
+      path: Assets/Sprites/UI/GroupPattern.png
+      subName: GroupPattern_ETC
+    StringTableKey: ST_WorldView
+  - ID: Phi
+    SpritePath:
+      path: Assets/Sprites/UI/GroupPattern.png
+      subName: GroupPattern
+    StringTableKey: ST_WorldView
+  - ID: Meta
+    SpritePath:
+      path: Assets/Sprites/UI/GroupPattern.png
+      subName: GrouopPattern_Meta
+    StringTableKey: ST_WorldView
+  - ID: GDI
+    SpritePath:
+      path: Assets/Sprites/UI/GroupPattern.png
+      subName: GroupPattern_GDI
+    StringTableKey: ST_WorldView
+  - ID: Writer
+    SpritePath:
+      path: Assets/Sprites/UI/GroupPattern.png
+      subName: GroupPattern_Writer
+    StringTableKey: ST_WorldView
+  - ID: Templar
+    SpritePath:
+      path: Assets/Sprites/UI/GroupPattern.png
+      subName: GroupPattern_Paladin
+    StringTableKey: ST_WorldView
+  - ID: AMD
+    SpritePath:
+      path: Assets/Sprites/UI/GroupPattern.png
+      subName: GroupPattern_AMD
+    StringTableKey: ST_WorldView
+  - ID: Uber
+    SpritePath:
+      path: Assets/Sprites/UI/GroupPattern.png
+      subName: GroupPattern
+    StringTableKey: ST_WorldView
+  - ID: Consumer
+    SpritePath:
+      path: Assets/Sprites/UI/GroupPattern.png
+      subName: GroupPattern_Consumer
+    StringTableKey: ST_WorldView
+  - ID: ACTP_ActionType
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_ActionType_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_ActionType_Continuous
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_StrategyType
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_StrategyType_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_StrategyType_Cast
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_StrategyType_Toggle
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_Interruptible
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_Interruptible_TRUE
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_Interruptible_FALSE
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_RequiredGameplayTags
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_AllowedProgresses
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_RequiredActions
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_RequireAmmo
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_PreDelay
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_Duration
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_PostDelay
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_CooldownTime
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_AllowedStates
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_ModifierIds
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: ACTP_StatusEffectIds
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Attack_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Attack_Base01
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Attack_Base02
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Attack_Sub
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Dodge_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Reload_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Interact_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Cancel_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Skill_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_Guard_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_DashAttack_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action
+  - ID: Action_FireAttack_Base
+    SpritePath:
+      path: 
+      subName: 
+    StringTableKey: ST_Action

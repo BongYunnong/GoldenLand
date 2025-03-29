@@ -12,7 +12,10 @@ public class ConstVisualEffefctInfo
     public ConstVisualEffefctInfo(VisualEffectDataSet.TableData data)
     {
         this.id = data.ID;
-        this.particlePrefab = data.EffectPaths.GetValue().GetComponent<VisualEffectComponent>();
+        if (data.EffectPaths.GetValue())
+        {
+            this.particlePrefab = data.EffectPaths.GetValue().GetComponent<VisualEffectComponent>();
+        }
     }
 }
 

@@ -7,10 +7,26 @@ using UnityEngine.Events;
 public class Character : CharacterBase
 {
     protected PlatformerComponent platformerComponent;
-    public PlatformerComponent PlatformerComponent { get { return PlatformerComponent; } }
+    public PlatformerComponent PlatformerComponent { get
+        {
+            if (platformerComponent == null)
+            {
+                platformerComponent = GetComponentInChildren<PlatformerComponent>();
+            }
+            return platformerComponent;
+        } 
+    }
     
     protected PerceptionComponent perceptionComponent;
-    public PerceptionComponent Perception { get { return perceptionComponent; } }
+    public PerceptionComponent Perception {get
+        {
+            if (perceptionComponent == null)
+            {
+                perceptionComponent = GetComponentInChildren<PerceptionComponent>();
+            }
+            return perceptionComponent;
+        } 
+    }
 
     public Dictionary<string, bool> bookIds = new Dictionary<string, bool>();
     private Dictionary<EBookmarkType, string> bookmarks = new Dictionary<EBookmarkType, string>();
@@ -315,7 +331,7 @@ public class Character : CharacterBase
     protected virtual void FlipCharacter()
     {
         float scaleDirX = 1.0f;
-        Vector3 projectedInput = Vector3.ProjectOnPlane(perceptionComponent.transform.forward, Camera.main.transform.forward).normalized;
+        Vector3 projectedInput = Vector3.ProjectOnPlane(Perception.transform.forward, Camera.main.transform.forward).normalized;
         if (projectedInput.x > projectedInput.y) scaleDirX = 1.0f;
         else if (projectedInput.x < projectedInput.y) scaleDirX = -1.0f;
         CharacterBody.localScale = new Vector3(scaleDirX * CharScale, Mathf.Abs(CharScale), 1f);

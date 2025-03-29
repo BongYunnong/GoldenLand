@@ -22,7 +22,6 @@ public class BookDataSet : SingletonScriptableObject<BookDataSet>
 		public string CharacterId;
 		public string EquipmentPresetId;
 		public SpritePath CoverImagePath;
-		public List<ConstRestoreInfo> RestoreInfos;
 		public string Tool;
 		public float AttackRapidCooldownTime;
 		public List<string> ActionKeyBinding;

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2896242675d7074d8f6c56062fe430b, type: 3}
+  m_Name: WeaponDataSet
+  m_EditorClassIdentifier: 
+  datas:
+  - ID: Base
+    AttackObjectType: 0
+    WeaponPrefab:
+      path: Assets/Prefabs/Combat/Weapon/WeaponBase.prefab
+      value: {fileID: 0}
+    Collider: Box=0_0/1_1
+    Sprites:
+    - path: Assets/Sprites/Character/Weapon/Weapon_ISan_Base.png
+      subName: 
+    AnimStrings:
+    - Weapon_Staff_Stored_001=false
+    - Weapon_Staff_Idle_001=false
+    StoredSocketSettings:
+    - Back/Back
+    IdleSocketSettings:
+    - RightHand/OuterBody
+    ActionSocketSettings:
+    - RightHand/OuterBody

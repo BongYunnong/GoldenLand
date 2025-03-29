@@ -15,28 +15,11 @@ public enum EBookmarkType
 
 
 [System.Serializable]
-public struct ConstRestoreInfo
-{
-    public string GameEventId;
-    public int MaxGoalCount;
-    public int GoalValue;
-    public ConstRestoreInfo(string value)
-    {
-        string[] args = value.Split('/');
-        GameEventId = args[0];
-        MaxGoalCount = int.Parse(args[1]);
-        GoalValue = int.Parse(args[2]);
-    }
-}
-
-
-[System.Serializable]
 public struct ConstBookInfo
 {
     public string ID;
     public string CharacterId;
     public List<Sprite> CoverImages;
-    public List<ConstRestoreInfo> RestoreInfos;
     public string Tool;
     public string EquipmentPresetId;
     public float AttackRapidCooldownTime;
@@ -64,7 +47,6 @@ public struct ConstBookInfo
             CoverImages.Add(coverPart.GetSprite());
         }
         
-        this.RestoreInfos = data.RestoreInfos;
         this.Tool = data.Tool;
         this.EquipmentPresetId = data.EquipmentPresetId;
         this.PersonalityIds = data.PersonalityIds;

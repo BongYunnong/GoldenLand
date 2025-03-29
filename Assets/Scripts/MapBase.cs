@@ -7,6 +7,16 @@ using UnityEditor;
 
 public class MapBase : MonoBehaviour
 {
-    public GridLayout gridLayout;
+    GoalGraph goalGraph;
+    public GoalGraph GoalGraph { get { return goalGraph; } }
+
+    private void Start()
+    {
+        goalGraph = GetComponent<GoalGraph>();
+        if(goalGraph)
+        {
+            goalGraph.InitializeGoalGraph();
+        }
+    }
 }
 
