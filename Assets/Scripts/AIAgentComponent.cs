@@ -65,6 +65,12 @@ public class AIAgentComponent : MonoBehaviour
 
     private void Start()
     {
+        if (pathRendererPrefab)
+        {
+            pathRenderer = Instantiate(pathRendererPrefab);
+            pathRenderer.InitializePathRenderer(ownerCharacter);
+        }
+        
         if(moveDestOffsetCoroutine != null)
         {
             StopCoroutine(moveDestOffsetCoroutine);
@@ -187,16 +193,7 @@ public class AIAgentComponent : MonoBehaviour
         }
         if (pathRenderer)
         {
-            GoalNode currGoalNode = Perception.GetCurrentTarget();
-            if (currGoalNode && currGoalNode.TryGetComponent(out Player targetPlayer))
-            {
-                pathRenderer.gameObject.SetActive(true);
-                pathRenderer.DrawPathLines(targetPath, Perception.GetCurrentTarget(), destination, offset);
-            }
-            else
-            {
-                pathRenderer.gameObject.SetActive(false);
-            }
+            pathRenderer.DrawPathLines(targetPath, Perception.GetCurrentTarget(), destination, offset);
         }
     }
 

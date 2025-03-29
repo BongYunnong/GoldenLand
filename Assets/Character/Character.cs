@@ -36,7 +36,8 @@ public class Character : CharacterBase
     public Rigidbody Rigidbody { get { return Rigidbody; } }
 
     [Header("[Movement]")]
-    protected float velocityXSmoothing;
+    protected float velocityXSmoothing = 1;
+    protected float velocityZSmoothing = 1;
     
     protected bool jumping = false;
     [Range(0, 1f)] public float f_CutJumpHeight = 0.5f;
@@ -159,6 +160,7 @@ public class Character : CharacterBase
         }
 
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocity.x, ref velocityXSmoothing, smoothingValue);
+        velocity.z = Mathf.SmoothDamp(velocity.z, targetVelocity.z, ref velocityZSmoothing, smoothingValue);
         if (IsGravityBlocked() == false)
         {
             velocity.y += gravity * Time.deltaTime;
@@ -169,7 +171,7 @@ public class Character : CharacterBase
         }
         else
         {
-            Vector2 resultVelocity = (velocity + additionalForceVelocity) * Time.deltaTime;
+            Vector3 resultVelocity = (velocity + additionalForceVelocity) * Time.deltaTime * 10;
             PlatformerComponent.Move(resultVelocity);
         }
         
@@ -192,14 +194,17 @@ public class Character : CharacterBase
         if (dashing)
         {
             targetVelocity.x = moveInput.x * inputScale * dashSpeedMultiplier;
+            targetVelocity.z = moveInput.y * inputScale * dashSpeedMultiplier;
         }
         else if (PlatformerComponent.collisions.below == false)
         {
             targetVelocity.x = Mathf.Lerp(targetVelocity.x, moveInput.x * inputScale, Time.deltaTime);
+            targetVelocity.z = Mathf.Lerp(targetVelocity.z, moveInput.y * inputScale, Time.deltaTime);
         }
         else
         {
             targetVelocity.x = moveInput.x * inputScale;
+            targetVelocity.z = moveInput.y * inputScale;
         }
 
         f_JumpPressedRemember -= Time.deltaTime;
@@ -228,14 +233,17 @@ public class Character : CharacterBase
         {
             case EDodgeType.Base:
             {
-                // AnimationCurve에 따라 t 값 보정
-                float prevValue = dodgeInfo.dashCurve.Evaluate(prevT);
-                float curveValue = dodgeInfo.dashCurve.Evaluate(t);
-                // 다음 이동 위치 계산
-                Vector2 currentPosition = Vector2.Lerp(dodgeInfo.startPosition, dodgeInfo.targetPosition, prevValue);
-                Vector2 nextPosition = Vector2.Lerp(dodgeInfo.startPosition, dodgeInfo.targetPosition, curveValue);
-                Vector2 diff = nextPosition - currentPosition;
-                PlatformerComponent.Move(diff);
+                if (dodgeInfo.dashCurve != null)
+                {
+                    // AnimationCurve에 따라 t 값 보정
+                    float prevValue = dodgeInfo.dashCurve.Evaluate(prevT);
+                    float curveValue = dodgeInfo.dashCurve.Evaluate(t);
+                    // 다음 이동 위치 계산
+                    Vector2 currentPosition = Vector2.Lerp(dodgeInfo.startPosition, dodgeInfo.targetPosition, prevValue);
+                    Vector2 nextPosition = Vector2.Lerp(dodgeInfo.startPosition, dodgeInfo.targetPosition, curveValue);
+                    Vector2 diff = nextPosition - currentPosition;
+                    PlatformerComponent.Move(diff);
+                }
                 break;
             }
             case EDodgeType.Force:
@@ -417,6 +425,7 @@ public class Character : CharacterBase
             
         float moveSpeed = 5.0f;
         targetVelocity.x = moveInput.x * moveSpeed * dashSpeedMultiplier * 0.75f;
+        targetVelocity.z = moveInput.y * moveSpeed * dashSpeedMultiplier * 0.75f;
         additionalForceVelocity = Vector2.zero;
             
         anim.SetTrigger("Dash");
@@ -424,6 +433,10 @@ public class Character : CharacterBase
     
     public virtual void SearchPath(Vector3 destination)
     {
+        if (TryGetComponent(out AIAgentComponent aiAgent))
+        {
+            aiAgent.SearchPath(destination);
+        }
     }
     
     public Vector3 GetViewDirection()

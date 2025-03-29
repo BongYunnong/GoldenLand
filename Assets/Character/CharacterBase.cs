@@ -248,12 +248,12 @@ public class CharacterBase : MonoBehaviour
     protected bool[] mPrevInputs = new bool[(int)EInputAction.MAX];
 
     public float inputMultiplier = 1;
-    protected Vector2 velocity;
-    public Vector2 Velocity { get { return velocity; } }
-    protected Vector2 targetVelocity;
-    public Vector2 TargetVelocity { get { return targetVelocity; } }
-    protected Vector2 additionalForceVelocity;
-    public Vector2 AdditionalForceVelocity { get { return additionalForceVelocity; } }
+    protected Vector3 velocity;
+    public Vector3 Velocity { get { return velocity; } }
+    protected Vector3 targetVelocity;
+    public Vector3 TargetVelocity { get { return targetVelocity; } }
+    protected Vector3 additionalForceVelocity;
+    public Vector3 AdditionalForceVelocity { get { return additionalForceVelocity; } }
 
     private Dictionary<string, int> jumpBlockCounts = new Dictionary<string, int>();
     private Dictionary<string, int> viewControlBlockCounts = new Dictionary<string, int>();

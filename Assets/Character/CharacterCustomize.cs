@@ -338,6 +338,18 @@ public class CharacterCustomize : MonoBehaviour
             }
             SetSprite(type, equipments[type]);
         }
+        for (EEquipmentType type = EEquipmentType.Hair; type < EEquipmentType.MAX; type++)
+        {
+            if (characterData.defaultEquipmentIds.TryGetValue(type, out string value))
+            {
+                equipments[type] = value;
+            }
+            else
+            {
+                equipments[type] = "";
+            }
+            SetSprite(type, equipments[type]);
+        }
     }
     public void SetSprite(ConstEquipmentPresetInfo equipmentPresetInfo)
     {

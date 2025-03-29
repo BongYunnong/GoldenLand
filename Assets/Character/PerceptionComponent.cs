@@ -374,10 +374,10 @@ public class PerceptionComponent : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
-    private void SearchPath(Vector3 _movePos)
+    private void SearchPath(Vector3 movePos)
     {
-        LastSearchPos = _movePos;
-        ownerCharacter.SearchPath(_movePos);
+        LastSearchPos = movePos;
+        ownerCharacter.SearchPath(movePos);
     }
 
     public void SetMaxPathCooldownTime(float maxCooldownTime)

@@ -238,9 +238,57 @@ PrefabInstance:
       propertyPath: m_Name
       value: LobbyCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Key
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Key
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Key
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Key
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[0].Value
+      value: Hair_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Value
+      value: BackHair_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Value
+      value: Head_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Value
+      value: Face_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Value
+      value: UpperBody_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Value
+      value: LowerBody_Miku_001
+      objectReference: {fileID: 0}
     - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.34
       objectReference: {fileID: 0}
     - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -277,6 +325,10 @@ PrefabInstance:
     - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.equipmentPresetId
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size

@@ -59,6 +59,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8605585110502343879, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5670112764888546661}
+    - targetCorrespondingSourceObject: {fileID: 8605585110502343879, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5514468976173340662}
   m_SourcePrefab: {fileID: 100100000, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
 --- !u!1 &1411294388344060170 stripped
 GameObject:
@@ -77,3 +80,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804e00dc13e557748a01b30bfd686b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5514468976173340662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411294388344060170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8182e0dee6e486c49bc794778e5fc8ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentContext: 0
+  myPath:
+    lookPoints: []
+    finishLineIndex: 0
+  pathRendererPrefab: {fileID: 1224997598805920790, guid: 887163f644d7b31458f0107d13de9885, type: 3}
+  turnSpeed: 5
