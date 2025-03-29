@@ -39,7 +39,6 @@ public class Bot : Character
         if(boxCollider2D)
         {
             halfSize = boxCollider2D.size * 0.5f;
-            centerOffset = boxCollider2D.offset;
         }
 
         if(moveDestOffsetCoroutine != null)
@@ -61,11 +60,11 @@ public class Bot : Character
 
     protected void MoveInputFunction()
     {
-        mInputs[(int)EKeyInput.Left] = false;
-        mInputs[(int)EKeyInput.Right] = false;
-        mInputs[(int)EKeyInput.Up] = false;
-        mInputs[(int)EKeyInput.Down] = false;
-        mInputs[(int)EKeyInput.Dodge] = false;
+        mInputs[(int)EInputAction.Left] = false;
+        mInputs[(int)EInputAction.Right] = false;
+        mInputs[(int)EInputAction.Up] = false;
+        mInputs[(int)EInputAction.Down] = false;
+        mInputs[(int)EInputAction.Dodge] = false;
 
         Vector2 currentInput = Vector2.zero;
 
@@ -86,7 +85,7 @@ public class Bot : Character
         }
 
 
-        SetInput(currentInput);
+        SetMoveInput(currentInput);
         oldPosition = transform.position;
     }
 
@@ -121,7 +120,7 @@ public class Bot : Character
                     perceptionComponent.transform.rotation = Quaternion.Lerp(perceptionComponent.transform.rotation, targetRot, Time.deltaTime * turnSpeed);
                 }
                 Vector3 currentDir = GetViewDirection() + new Vector3(moveDestOffset.x, 0, moveDestOffset.y) * 0.2f;
-                OutInput = Vector2.Lerp(input, new Vector2(currentDir.x, currentDir.z).normalized, Time.deltaTime * turnSpeed);
+                OutInput = Vector2.Lerp(moveInput, new Vector2(currentDir.x, currentDir.z).normalized, Time.deltaTime * turnSpeed);
             }
         }
     }
@@ -143,9 +142,7 @@ public class Bot : Character
         {
             pathTargetIndex++;
         }
-        OutInput = Vector2.Lerp(input, new Vector2(currentDir.x, currentDir.z).normalized, Time.deltaTime * turnSpeed);
-        // GC�ɷ��� �ϴ� ����
-        // perceptionComponent.ModifyInput(ref OutInput);
+        OutInput = Vector2.Lerp(moveInput, new Vector2(currentDir.x, currentDir.z).normalized, Time.deltaTime * turnSpeed);
     }
 
     bool searchingPath = false;
@@ -154,8 +151,8 @@ public class Bot : Character
     {
         if (platformerComponent.collisions.below == false)
         {
-            mInputs[(int)EKeyInput.Dodge] = false;
-            mInputs[(int)EKeyInput.Crounch] = false;
+            mInputs[(int)EInputAction.Dodge] = false;
+            mInputs[(int)EInputAction.Down] = false;
             return;
         }
 

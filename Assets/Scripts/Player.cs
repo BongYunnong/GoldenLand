@@ -2,15 +2,6 @@ using UnityEngine;
 
 public class Player : Character
 {
-    public override void InitializeCharacter()
-    {
-        base.InitializeCharacter();
-
-        dashInput = false;
-        f_Dodge = 0;
-    }
-
-    #region Update
     protected override void Update()
     {
         if (initialized == false) return;
@@ -31,28 +22,20 @@ public class Player : Character
         }
     }
     
-    protected override void MoveInputFunction()
+    protected void MoveInputFunction()
     {
-        mInputs[(int)EKeyInput.Left] = false;
-        mInputs[(int)EKeyInput.Right] = false;
-        mInputs[(int)EKeyInput.Up] = false;
-        mInputs[(int)EKeyInput.Down] = false;
-        mInputs[(int)EKeyInput.Dodge] = false;
+        mInputs[(int)EInputAction.Left] = false;
+        mInputs[(int)EInputAction.Right] = false;
+        mInputs[(int)EInputAction.Up] = false;
+        mInputs[(int)EInputAction.Down] = false;
+        mInputs[(int)EInputAction.Dodge] = false;
 
         if (IsControllable() == false) return;
 
-        if (f_Dodge <= 0)
-        {
-            Vector3 moveInput = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            Vector3 moveDir = Vector3.ProjectOnPlane(Camera.main.transform.forward, Vector3.up).normalized * moveInput.z + Camera.main.transform.right * moveInput.x;
-            moveDir.y = 0;
-            SetInput(new Vector2(moveDir.x, moveDir.z).normalized);
-            dashInput = Input.GetKey(KeyCode.LeftShift);
-        }
-        else
-        {
-            SetInput(Vector2.zero);
-        }
+        Vector3 moveInput = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        Vector3 moveDir = Vector3.ProjectOnPlane(Camera.main.transform.forward, Vector3.up).normalized * moveInput.z + Camera.main.transform.right * moveInput.x;
+        moveDir.y = 0;
+        SetMoveInput(new Vector2(moveDir.x, moveDir.z).normalized);
 
         Vector3 diff = FindObjectOfType<PlayerController>().GetMousePos() - perceptionComponent.transform.position;
         if (diff.magnitude > 0.1f)
@@ -61,5 +44,4 @@ public class Player : Character
             perceptionComponent.transform.rotation = Quaternion.Lerp(perceptionComponent.transform.rotation, targetRot, Time.deltaTime * 10.0f);
         }
     }
-    #endregion
 }

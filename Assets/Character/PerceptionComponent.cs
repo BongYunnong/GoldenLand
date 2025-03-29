@@ -251,7 +251,7 @@ public class PerceptionComponent : MonoBehaviour
 
     private GoalNode GetNearestPlayer()
     {
-        return GameManager.GetInstance().PlayerController.DefaultPlayerCharacter.GetComponent<GoalNode>();
+        return GameManager.GetInstance().PlayerController.defaultPlayerCharacter.GetComponent<GoalNode>();
     }
 
     public void ApplyHitReact(float _stimulus, GameObject _stimulusObject, bool _dead)
