@@ -171,7 +171,7 @@ public class Character : CharacterBase
         }
         else
         {
-            Vector3 resultVelocity = (velocity + additionalForceVelocity) * Time.deltaTime * 10;
+            Vector3 resultVelocity = (velocity + additionalForceVelocity) * Time.deltaTime;
             PlatformerComponent.Move(resultVelocity);
         }
         
@@ -189,7 +189,7 @@ public class Character : CharacterBase
             CancelJump();
         }
 
-        float speedMultiplier = 1.0f;
+        float speedMultiplier = 10.0f;
         float inputScale = speedMultiplier * inputMultiplier;
         if (dashing)
         {
@@ -332,7 +332,7 @@ public class Character : CharacterBase
     private void UpdateAnimation()
     {
         anim.SetBool("IsGrounded", PlatformerComponent.collisions.below);
-        anim.SetFloat("Vel", Mathf.Abs(velocity.x));
+        anim.SetFloat("Vel", new Vector2(velocity.x,velocity.z).magnitude);
         anim.SetFloat("DirMatch", (targetPos.x - transform.position.x) * velocity.x);
     }
 
