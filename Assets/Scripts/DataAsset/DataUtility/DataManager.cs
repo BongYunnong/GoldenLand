@@ -2,7 +2,6 @@ using UnityEditor;
 using UnityEngine;
 using Unity.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine.Events;
 
 
@@ -142,12 +141,25 @@ public class DataManager : PersistentSingletonMonoBehavior<DataManager>
     public Dictionary<string, ConstEquipmentInfo> equipmentDict = new Dictionary<string, ConstEquipmentInfo>();
     public Dictionary<EEquipmentType, Dictionary<string, ConstEquipmentInfo>> equipmentTypeDict = new Dictionary<EEquipmentType, Dictionary<string, ConstEquipmentInfo>>();
 
+    public Dictionary<string, ConstActionInfo> actionDict = new Dictionary<string, ConstActionInfo>();
+    public Dictionary<string, ConstWeaponInfo> weaponDict = new Dictionary<string, ConstWeaponInfo>();
+    public Dictionary<string, ConstActionInputInfo> actionInputDict = new Dictionary<string, ConstActionInputInfo>();
+    public Dictionary<string, ConstActionModifierInfo> actionModifierDict = new Dictionary<string, ConstActionModifierInfo>();
+    public Dictionary<string, ConstActionEffectInfo> actionEffectDict = new Dictionary<string, ConstActionEffectInfo>();
+    public Dictionary<string, ConstActionAreaInfo> actionAreaDict = new Dictionary<string, ConstActionAreaInfo>();
 
+    public Dictionary<string, ConstStatusEffectInfo> statusEffectDict = new Dictionary<string, ConstStatusEffectInfo>();
+    
+    public Dictionary<string, ConstBookInfo> bookDict = new Dictionary<string, ConstBookInfo>();
+
+    public Dictionary<string, ConstAnimationClipInfo> animationClipDict = new Dictionary<string, ConstAnimationClipInfo>();
+    public Dictionary<string, ConstEffectGroupInfo> effectGroupInfos = new Dictionary<string, ConstEffectGroupInfo>();
+    public Dictionary<string, ConstSoundInfo> soundDict = new Dictionary<string, ConstSoundInfo>();
+    public Dictionary<string, ConstVisualEffefctInfo> visualEffectDict = new Dictionary<string, ConstVisualEffefctInfo>();
+    
     public Dictionary<string, LocalizedStructInfoBase> extraInfoDict = new Dictionary<string, LocalizedStructInfoBase>();
     public Dictionary<string, GameObject> extraGameObjectDict = new Dictionary<string, GameObject>();
 
-    
-    
     public UnityAction OnAllDataLoaded;
     public bool IsAllDataLoaded {  get; private set; }
 

@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
-
 [System.Serializable]
 public class ActionInfo
 {
@@ -409,7 +408,7 @@ public class ActionComponent : MonoBehaviour
             return;
         }
         inputActionBookmarkBindings.TryGetValue(key, out EBookmarkType bookmarkType);
-        string markedBookId = OwnerCharacter.AgentData.GetBookmarkedBookId(bookmarkType);
+        string markedBookId = OwnerCharacter.CharacterInfo.GetBookmarkedBookId(bookmarkType);
 
         // Bookmark가 설정이 안 되어있는 그냥 장착된 Book은 Action을 취할 수 없는 것으로 결정
         if (markedBookId != null && bookActionInfos.TryGetValue(markedBookId, out BookActionInfo markedBookActionInfo))

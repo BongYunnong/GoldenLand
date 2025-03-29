@@ -243,11 +243,7 @@ public class Weapon : MonoBehaviour, IAttackable
         owner = character;
         if (owner)
         {
-            owner.OnSimpleCharacterDead += HandleCharacterSimpleDead;
-            owner.OnCharacterDead += HandleCharacterDead;
-            owner.onCharacterAttackSucceeded += HandleCharacterAttackSucceeded;
             owner.StateChanged += HandleStateChanged;
-            owner.CombatModeChanged += HandleCombatModeChanged;
             if (owner.TryGetComponent(out Character ownerCharacter))
             {
                 ownerCharacter.BookmarkChanged += HandleBookmarkChanged;
@@ -257,7 +253,6 @@ public class Weapon : MonoBehaviour, IAttackable
                 }
             }
             HandleStateChanged(owner.CurrentCharacterState);
-            HandleCombatModeChanged(owner.CombatMode);
         }
 
         weaponBaseCollilder.enabled = false;
@@ -283,11 +278,7 @@ public class Weapon : MonoBehaviour, IAttackable
     {
         if (owner != null)
         {
-            owner.OnSimpleCharacterDead -= HandleCharacterSimpleDead;
-            owner.OnCharacterDead -= HandleCharacterDead;
-            owner.onCharacterAttackSucceeded -= HandleCharacterAttackSucceeded;
             owner.StateChanged -= HandleStateChanged;
-            owner.CombatModeChanged -= HandleCombatModeChanged;
             if (owner.TryGetComponent(out Character ownerCharacter))
             {
                 ownerCharacter.BookmarkChanged -= HandleBookmarkChanged;
@@ -338,22 +329,15 @@ public class Weapon : MonoBehaviour, IAttackable
             case EWeaponState.Attack:
                 break;
             case EWeaponState.Idle:
-                if (Owner.ActionComponent.IsReloading())
+                float angle = Vector2.Angle(Vector2.right, direction);
+                Vector3 cross = Vector3.Cross(Vector2.right, direction);
+                if (owner.transform.localScale.x < 0)
                 {
-                    transform.rotation = direction.x > 0 ? Quaternion.Euler(0, 0, -45) : Quaternion.Euler(0, 0, -135);
+                    angle = Vector2.Angle(Vector2.left, direction);
+                    cross = Vector3.Cross(Vector2.left, direction);
                 }
-                else
-                {
-                    float angle = Vector2.Angle(Vector2.right, direction);
-                    Vector3 cross = Vector3.Cross(Vector2.right, direction);
-                    if (owner.transform.localScale.x < 0)
-                    {
-                        angle = Vector2.Angle(Vector2.left, direction);
-                        cross = Vector3.Cross(Vector2.left, direction);
-                    }
-                    if (cross.z < 0) angle = -angle;
-                    transform.rotation = Quaternion.Euler(0, 0, angle);
-                }
+                if (cross.z < 0) angle = -angle;
+                transform.rotation = Quaternion.Euler(0, 0, angle);
                 break;
         }
 
@@ -374,7 +358,6 @@ public class Weapon : MonoBehaviour, IAttackable
         owner.TryPlayAnimBool("Reload", false);
 
         FireInfo currentFireInfo = new FireInfo(WeaponInfo, owner, weaponInfo.AttackObjectType);
-        EventLogManager.GetInstance()?.AddFireLog(currentFireInfo);
 
         Vector2 startPos = owner.ActionComponent.GetStartPos(attackRequsetBundle.StartPositionType);
         Vector2 targetPos = owner.ActionComponent.GetTargetPos(attackRequsetBundle.TargetPositionType);
@@ -423,15 +406,6 @@ public class Weapon : MonoBehaviour, IAttackable
                     }
                     break;
                 }
-                case EActionAreaType.Target:
-                {
-                    foreach (var AimedTarget in attackRequsetBundle.AimedTargets)
-                    {
-                        IHittable targetHittable = AimedTarget.Key;
-                        targetHittable.Hit(GetAttackInfo(action, targetHittable, attackRequsetBundle));
-                    }
-                    break;
-                }
             }
         }
     }
@@ -475,10 +449,12 @@ public class Weapon : MonoBehaviour, IAttackable
 
     protected void CrateProjectie(string projectileId, Vector2 dir, AttackRequsetBundle attackRequsetBundle)
     {
+        /*
         GameObject pooledBullet = ObjectPoolManager.GetObject("Bullet");
         pooledBullet.transform.position = owner.ActionComponent.GetStartPos(attackRequsetBundle.StartPositionType);
         ProjectileBase currProjectileBase = pooledBullet.GetComponent<ProjectileBase>();
         currProjectileBase.InitializeProjectile(projectileId, gameObject, owner, dir, owner.team, Color.white, attackRequsetBundle);
+        */
     }
 
     public virtual bool TryCheckAttackObstacle(Vector2 InDirToAttackableTarget, float InMagnitude)
@@ -565,11 +541,6 @@ public class Weapon : MonoBehaviour, IAttackable
         SetAnimation(attachState);
         
         AttachToSocket(attachState);
-
-        if (attachState == EWeaponAttachState.Idle || attachState == EWeaponAttachState.Action)
-        {
-            owner.OnMainWeaponChanged?.Invoke(this);
-        }
     }
 
     private void SetAnimation(EWeaponAttachState attachState)

@@ -187,7 +187,7 @@ public class PerceptionComponent : MonoBehaviour
             Character currTargetCharacter = fieldOfPerception.visibleTargets[i].GetComponent<Character>();
             if (currTargetCharacter)
             {
-                bool recognizedMovingObject = currTargetCharacter.GetVelocity().magnitude >= velocityRecognitionMagnitude;
+                bool recognizedMovingObject = currTargetCharacter.Velocity.magnitude >= velocityRecognitionMagnitude;
                 float DistanceRatio = 1.0f - (Vector3.Distance(this.transform.position, currTargetCharacter.transform.position) / fieldOfPerception.GetViewRadius());
                 tmpAdditionalRecognition += (recognizedMovingObject ? 2.0f : 1.0f) * DistanceRatio;
                 foundedSomething = true;
@@ -486,7 +486,7 @@ public class PerceptionComponent : MonoBehaviour
 
     public bool IsReachedPatrolPos()
     {
-        return patrolPos.HasValue ? (Vector3.Distance(patrolPos.Value, transform.position) <= Bot.cBotMaxPositionError) : true;
+        return patrolPos.HasValue ? (Vector3.Distance(patrolPos.Value, transform.position) <= 1) : true;
     }
 
 

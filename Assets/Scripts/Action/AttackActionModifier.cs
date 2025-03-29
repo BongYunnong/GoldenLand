@@ -29,7 +29,6 @@ public enum EActionAreaType
     Ray,        // 출발점이 존재하고, Collide된 point까지 Ray를 그렸을 때 충돌이 막히지 않아야 실행
                 // 만약 그것이 벽 같은 것이라면, 벽에 IHittable을 구현하고 AttackInfo에 Blocked를 
     Area,       // 명확한 방향 벡터 없이, Collide된 모든 오브젝트에 대해 공격을 실행
-    Target,     // PreAction에서 타겟팅 한 것을 바탕으로 공격을 실행
 };
 
 
@@ -103,7 +102,6 @@ public class AttackRequsetBundle
     public EActionStartPositionType StartPositionType = EActionStartPositionType.None;
     public EActionTargetPositionType TargetPositionType = EActionTargetPositionType.None;
 
-    public Dictionary<IHittable, bool> AimedTargets = new Dictionary<IHittable, bool>();
     public List<ConstActionAreaInfo> AreaInfos = new List<ConstActionAreaInfo>();
     
     public Vector2 GetKnockbackForceVector(IHittable hittable, Vector3 ownerPosition, Vector3 basePosition)
@@ -183,8 +181,6 @@ public class AttackRequsetBundle
 
 public class AttackActionModifier : ActionModifier
 {
-    public List<ConstActionAimInfo> aimInfos = new List<ConstActionAimInfo>();
-    private List<ActionAim> actionAims = new List<ActionAim>();
     public AttackRequsetBundle attackRequsetBundle;
 
     public AttackActionModifier(ConstActionModifierInfo actionModifierInfo, ActionBase actionBase) 
@@ -222,21 +218,6 @@ public class AttackActionModifier : ActionModifier
 
         attackRequsetBundle.StartPositionType = ActionModifierInfo.StartPositionType;
         attackRequsetBundle.TargetPositionType = ActionModifierInfo.TargetPositionType;
-        
-        // Aim도 여러개일 수 있다.
-        // ex. OverlapCircle/10/10/0/0/Character/1/1
-        if (actionModifierInfo.parameters.Count > 3)
-        {
-            string[] aimTokens = actionModifierInfo.parameters[3].Split('&');
-            for (int i = 0; i < aimTokens.Length; i++)
-            {
-                string aimId = aimTokens[i];
-                if (dataManager.actionAimDict.TryGetValue(aimId, out ConstActionAimInfo aimInfo))
-                {
-                    aimInfos.Add(aimInfo);
-                }
-            }
-        }
     }
 
     public override bool CanExeuteAction()
@@ -250,31 +231,11 @@ public class AttackActionModifier : ActionModifier
 
     public override void PreAction()
     {
-        for (int i = 0; i < aimInfos.Count; i++)
-        {
-            ConstActionAimInfo aimInfo = aimInfos[i];
-            ActionAim aim = ObjectPoolManager.GetObject("ActionAim").GetComponent<ActionAim>();
-            aim.StartSearch(action.ActionComponent.OwnerCharacter.GetComponent<IHittable>(), aimInfo);
-            actionAims.Add(aim);
-        }
     }
 
     public override void DoAction()
     {
-        attackRequsetBundle.AimedTargets.Clear();
-        for (int i = 0; i < actionAims.Count; i++)
-        {
-            for (int j = 0; j < actionAims[i].hittables.Count; j++)
-            {
-                attackRequsetBundle.AimedTargets.TryAdd(actionAims[i].hittables[j], true);
-            }
-        }
-        
         action.weapon.StartAttack(action, attackRequsetBundle);
-        
-#if UNITY_EDITOR
-        DrawLine();
-#endif
     }
 
     public override void PostAction()
@@ -291,10 +252,6 @@ public class AttackActionModifier : ActionModifier
 
     public override void FinishAction()
     {
-        for (int i = 0; i < actionAims.Count; i++)
-        {
-            actionAims[i].CancelSearch();
-        }
     }
 
     public override void AffectTarget(IHittable hittable)

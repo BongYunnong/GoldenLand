@@ -28,6 +28,7 @@ public static class ActionModifierFactory
         new Dictionary<EActionModifierType, Func<ConstActionModifierInfo, ActionBase, ActionModifier>>
     {
         { EActionModifierType.Attack, (constActionModifierInfo, action) => new AttackActionModifier(constActionModifierInfo, action) },
+        /*
         { EActionModifierType.Projectile, (constActionModifierInfo, action) => new ProjectileActionModifier(constActionModifierInfo, action) },
         { EActionModifierType.Dodge, (constActionModifierInfo, action) => new DodgeActionModifier(constActionModifierInfo, action) },
         { EActionModifierType.Reload, (constActionModifierInfo, action) => new ReloadActionModifier(constActionModifierInfo, action) },
@@ -39,7 +40,7 @@ public static class ActionModifierFactory
         { EActionModifierType.Camera, (constActionModifierInfo, action) => new CameraActionModifier(constActionModifierInfo, action) },
         { EActionModifierType.StatusEffect, (constActionModifierInfo, action) => new StatusEffectActionModifier(constActionModifierInfo, action) },
         { EActionModifierType.GameplayTag, (constActionModifierInfo, action) => new GameplayTagActionModifier(constActionModifierInfo, action) },
-        { EActionModifierType.IK, (constActionModifierInfo, action) => new IKActionModifier(constActionModifierInfo, action) },
+        */
     };
 
 

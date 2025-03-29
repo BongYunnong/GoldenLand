@@ -109,7 +109,6 @@ namespace CharacterStates
             entity.SetTargetVelocity(Vector2.zero);
             entity.SetAdditionalVelocity(Vector2.zero);
             
-            entity.ShowContextualDialogueUI(EDialogueContextType.Stunned);
             entity.GameplayTagContainer.AddTag(EGameplayTag.Stunned);
 
 
@@ -291,7 +290,7 @@ namespace CharacterStates
             {
                 if (entity.TryGetComponent(out Character character))
                 {
-                    if (character.Platformer2D.collisions.below)
+                    if (character.PlatformerComponent.collisions.below)
                     {
                         entity.TryChangeState(ECharacterState.Down);
                     }
@@ -377,9 +376,8 @@ namespace CharacterStates
         {
             if (entity.TryGetComponent(out Character character))
             {
-                if (character.Platformer2D.collisions.below && entity.GameplayTagContainer.HasTag(EGameplayTag.Airborne))
+                if (character.PlatformerComponent.collisions.below && entity.GameplayTagContainer.HasTag(EGameplayTag.Airborne))
                 {
-                    entity.CreateLandingEffect();
                     entity.GameplayTagContainer.RemoveTag(EGameplayTag.Airborne);
                 }
             }
@@ -419,7 +417,7 @@ namespace CharacterStates
                 bool staggerEnd = entity.Velocity.y <= 0 && elapsedTime >= maxStaggerTime;
                 if (entity.TryGetComponent(out Character character))
                 {
-                    return staggerEnd && character.Platformer2D.collisions.below;
+                    return staggerEnd && character.PlatformerComponent.collisions.below;
                 }
                 return staggerEnd;
             }

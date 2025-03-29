@@ -541,7 +541,7 @@ public class ActionBase
         Debug.Log($"{ActionInfo.id}: PostAction started");
         CurrentActionProgressState = EActionProgressType.PostAction;
         ActionComponent.HandleActionProgressChanged(EActionProgressType.PostAction);
-        ActionComponent.OwnerCharacter.SetDodgeInfo(null);
+        ActionComponent.OwnerCharacter.HandleActionFinish();
         
         foreach (var modifier in Modifiers)
         {
@@ -639,7 +639,7 @@ public class ActionBase
         // MovementModifier가 있으면 Finish에서 되돌릴 수 있으므로 이후에 처리
         ActionComponent.OwnerCharacter.BlockView(false, "Action");
         ActionComponent.OwnerCharacter.BlockJump(false, "Action");
-        ActionComponent.OwnerCharacter.SetDodgeInfo(null);
+        ActionComponent.OwnerCharacter.HandleActionFinish();
         ActionComponent.OwnerCharacter.inputMultiplier = cachedVelocityMultiplier;
         RollbackAction();
     }

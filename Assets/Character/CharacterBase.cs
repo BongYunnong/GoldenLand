@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 public enum ECharacterState
@@ -80,11 +81,129 @@ public struct ConstCharacterInfo
     }
 }
 
+
+[System.Serializable]
+public class CharacterInfo
+{
+    public string characterID = null;
+    public List<string> bookIds = new List<string>();
+    public List<string> bookMarks = new List<string>();
+    public List<SpecInfo> specInfos = new List<SpecInfo>();
+    public IReadOnlyList<SpecInfo> SpecInfos => specInfos;
+    public SerializableDictionary<EEquipmentType, string> equipments = new SerializableDictionary<EEquipmentType, string>();
+
+
+    public void AddAllSpecExperience(int addExp)
+    {
+        for(int i=0; i < (int)ESpecType.MAX; i++)
+        {
+            AddSpecExperience((ESpecType)i, addExp);
+        }
+    }
+
+    public void AddSpecExperience(ESpecType specType, int addExp)
+    {
+        SpecInfo currSpecInfo = GetSpecInfo(specType);
+        if(currSpecInfo == null)
+        {
+            currSpecInfo = new SpecInfo();
+            currSpecInfo.specType = specType;
+            currSpecInfo.AddSpecExperience(addExp);
+            specInfos.Add(currSpecInfo);
+        }
+        else
+        {
+            currSpecInfo.AddSpecExperience(addExp);
+        }
+    }
+
+    public SpecInfo GetSpecInfo(ESpecType specType)
+    {
+        return specInfos.Find(x => x.specType == specType);
+    }
+
+    public List<string> GetPersonalityIds()
+    {
+        List<string> personalityIds = new List<string>();
+        DataManager dataManager = DataManager.Instance;
+        for (int i = 0; i < bookIds.Count; i++)
+        {
+            string bookId = bookIds[i];
+            if (dataManager.bookDict.TryGetValue(bookId, out ConstBookInfo constBookInfo))
+            {
+                for (int j = 0; j < constBookInfo.PersonalityIds.Count; j++)
+                {
+                    string personalityId = constBookInfo.PersonalityIds[j];
+                    personalityIds.Add(personalityId);
+                }
+            }
+        }
+        return personalityIds;
+    }
+
+    public bool HasBook(string bookId)
+    {
+        int foundedIndex = bookIds.FindIndex(x => x == bookId);
+        return foundedIndex >= 0;
+    }
+    public void AddBookId(string bookId)
+    {
+        int foundedIndex = bookIds.FindIndex(x => x == bookId);
+        if (foundedIndex >= 0)
+        {
+            return;
+        }
+        bookIds.Add(bookId);
+    }
+    public void RemoveBookId(string bookId)
+    {
+        int foundedIndex = bookIds.FindIndex(x => x == bookId);
+        if (foundedIndex >= 0)
+        {
+            bookIds.RemoveAt(foundedIndex);
+        }
+    }
+
+    public void SetBookmark(EBookmarkType bookmarkType, string bookId)
+    {
+        // Type index에 값이 없으면 추가 필요
+        for (int i = bookMarks.Count; i <= (int)bookmarkType; i++)
+        {
+            bookMarks.Add(null);
+        }
+        bookMarks[(int)bookmarkType] = bookId;
+    }
+
+    public string GetBookmarkedBookId(EBookmarkType bookmarkType)
+    {
+        // Type index에 값이 없으면 추가 필요
+        for (int i = bookMarks.Count; i <= (int)bookmarkType; i++)
+        {
+            bookMarks.Add(null);
+        }
+        return bookMarks[(int)bookmarkType];
+    }
+    public EBookmarkType GetBookmarkedType(string bookId)
+    {
+        for (int i = 0; i < bookMarks.Count; i++)
+        {
+            if (bookMarks[i] == bookId)
+            {
+                return (EBookmarkType)i;
+            }
+        }
+        return EBookmarkType.MAX;
+    }
+}
+
 public class CharacterBase : MonoBehaviour
 {
-    [SerializeField] protected ConstCharacterInfo characterInfo;
-    public ConstCharacterInfo CharacterInfo { get { return characterInfo; } }
+    [SerializeField] protected ConstCharacterInfo constCharacterInfo;
+    public ConstCharacterInfo ConstCharacterInfo { get { return constCharacterInfo; } }
 
+    [SerializeField] protected CharacterInfo characterInfo;
+    public CharacterInfo CharacterInfo { get { return characterInfo; } }
+    
     [HideInInspector] public CharacterCustomize characterCustomize;
     public CharacterCustomize CharacterCustomize { get { return characterCustomize; } }
     
@@ -93,6 +212,18 @@ public class CharacterBase : MonoBehaviour
 
     protected Animator anim;
     
+    protected ActionComponent actionComponent;
+    public ActionComponent ActionComponent { get
+        {
+            if (actionComponent == null)
+            {
+                actionComponent = GetComponentInChildren<ActionComponent>();
+                actionComponent.InitializeActionComponent(this);
+            }
+            return actionComponent;
+        } 
+    }
+    
     private GameplayTagContainer gameplayTagContainer = new GameplayTagContainer();
     public GameplayTagContainer GameplayTagContainer {get { return gameplayTagContainer; } }
     
@@ -100,6 +231,7 @@ public class CharacterBase : MonoBehaviour
     [SerializeField] protected Transform centerSocket;
     public Transform CenterSocket { get { return centerSocket; } }
 
+    
     public const float characterScaleMultiplier = 1f;
     protected float CharScale = 1;
     
@@ -122,6 +254,7 @@ public class CharacterBase : MonoBehaviour
     protected Vector2 additionalForceVelocity;
     public Vector2 AdditionalForceVelocity { get { return additionalForceVelocity; } }
 
+    private Dictionary<string, int> jumpBlockCounts = new Dictionary<string, int>();
     private Dictionary<string, int> viewControlBlockCounts = new Dictionary<string, int>();
     private Dictionary<string, int> gravityBlockCounts = new Dictionary<string, int>();
     
@@ -134,6 +267,8 @@ public class CharacterBase : MonoBehaviour
     private Dictionary<ECharacterState, List<System.Func<bool>>> stateTriggers = new Dictionary<ECharacterState, List<System.Func<bool>>>();
     public UnityAction<ECharacterState> StateChanged;
 
+    
+    public UnityAction<CharacterInfo> CharacterInfoUpdated;
     
     protected bool initialized = false;
 
@@ -330,7 +465,6 @@ public class CharacterBase : MonoBehaviour
         this.additionalForceVelocity = velocity;
     }
 
-    
     public void TryPlayAnimTrigger(string animName)
     {
         anim.SetTrigger(animName);
@@ -436,5 +570,46 @@ public class CharacterBase : MonoBehaviour
         }
 
         return false;
+    }
+    
+    
+    public void BlockJump(bool block, string reason)
+    {
+        if (jumpBlockCounts.ContainsKey(reason))
+        {
+            jumpBlockCounts[reason] += block ? 1 : -1;
+        }
+        else if(block)
+        {
+            jumpBlockCounts.Add(reason, 1);
+        }
+        else
+        {
+            Debug.LogError($"BlockView 카운트가 존재하지 않는데 block을 해제하려 하였습니다. reason: {reason}");
+        }
+    }
+
+
+    public bool IsJumpBlocked()
+    {
+        foreach (var jumpBlockCount in jumpBlockCounts)
+        {
+            if (jumpBlockCount.Value > 0)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    
+    public void CancelCurrentAction()
+    {
+        ActionComponent.CancelCurrentAction();
+    }
+
+    public virtual void HandleActionFinish()
+    {
+        
     }
 }

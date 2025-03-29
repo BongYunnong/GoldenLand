@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Character : CharacterBase
 {
@@ -10,6 +11,10 @@ public class Character : CharacterBase
     
     protected PerceptionComponent perceptionComponent;
     public PerceptionComponent Perception { get { return perceptionComponent; } }
+
+    public Dictionary<string, bool> bookIds = new Dictionary<string, bool>();
+    private Dictionary<EBookmarkType, string> bookmarks = new Dictionary<EBookmarkType, string>();
+    public Dictionary<EBookmarkType, string> Bookmarks {get {return bookmarks;}}
 
     protected Rigidbody ribidgeBody;
     public Rigidbody Rigidbody { get { return Rigidbody; } }
@@ -49,8 +54,10 @@ public class Character : CharacterBase
     protected float acceleratingTimeGrounded = .1f;
     protected float additionalVelocityDrag = 0.95f;
     
-    private Dictionary<string, int> jumpBlockCounts = new Dictionary<string, int>();
-
+    public UnityAction<string> BookEquipped;
+    public UnityAction<string> BookUnequipped;
+    public UnityAction<EBookmarkType, string> BookmarkChanged;
+    
     protected override void InitializeComponents()
     {
         base.InitializeComponents();
@@ -67,7 +74,7 @@ public class Character : CharacterBase
         }
         if(characterCustomize)
         {
-            characterCustomize.SetSprite(characterInfo);
+            characterCustomize.SetSprite(constCharacterInfo);
             characterCustomize.ResetColor();
         }
     }
@@ -413,34 +420,8 @@ public class Character : CharacterBase
         return perceptionComponent.transform.rotation;
     }
     
-    
-    public void BlockJump(bool block, string reason)
+    public override void HandleActionFinish()
     {
-        if (jumpBlockCounts.ContainsKey(reason))
-        {
-            jumpBlockCounts[reason] += block ? 1 : -1;
-        }
-        else if(block)
-        {
-            jumpBlockCounts.Add(reason, 1);
-        }
-        else
-        {
-            Debug.LogError($"BlockView 카운트가 존재하지 않는데 block을 해제하려 하였습니다. reason: {reason}");
-        }
+        SetDodgeInfo(null);
     }
-
-
-    public bool IsJumpBlocked()
-    {
-        foreach (var jumpBlockCount in jumpBlockCounts)
-        {
-            if (jumpBlockCount.Value > 0)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
 }

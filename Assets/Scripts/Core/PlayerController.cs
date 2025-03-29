@@ -271,7 +271,6 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
         if (targetBot != null && prevCharacter != targetBot)
         {
             SelectedCharacter = targetBot;
-            SelectedCharacter.ShowContextualDialogueUI(EDialogueContextType.Select);
             SetCamTarget(SelectedCharacter.transform, offset, bUsePendingTarget, duration);
         }
         else
@@ -291,19 +290,9 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
 
     private void UpdateSelectedCharacter(Character prevCharacter)
     {
-        if (prevCharacter)
-        {
-            prevCharacter.OnCharacterDead -= HandleCharacterDead;
-        }
-
         if (OnSelectedCharacterChanged != null)
         {
             OnSelectedCharacterChanged.Invoke(prevCharacter, SelectedCharacter);
-        }
-
-        if (SelectedCharacter)
-        {
-            SelectedCharacter.OnCharacterDead += HandleCharacterDead;
         }
     }
 
@@ -313,15 +302,12 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
         if (prevCharacter != null)
         {
             prevCharacter.CharacterCustomize.EnableOutline(false);
-            PossessedCharacter.GetComponent<AIAgentComponent>().enabled = true;
         }
 
         if (targetBot != null && prevCharacter != targetBot)
         {
             SelectCharacter(null);
             PossessedCharacter = targetBot;
-            PossessedCharacter.ShowContextualDialogueUI(EDialogueContextType.Select);
-            PossessedCharacter.GetComponent<AIAgentComponent>().enabled = false;
 
             SetCamTarget(PossessedCharacter.transform);
         }
@@ -341,28 +327,9 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
     }
     private void UpdatePossessedCharacter(Character prevCharacter)
     {
-        if (prevCharacter)
-        {
-            prevCharacter.OnCharacterDead -= HandleCharacterDead;
-            prevCharacter.OnInputActionCanceled -= HandleInputCanceled;
-            prevCharacter.ActionComponent.ActionCanceled -= HandleActionCanceled;
-        }
-
         if (OnPossessedCharacterChanged != null)
         {
             OnPossessedCharacterChanged.Invoke(prevCharacter, PossessedCharacter);
-        }
-
-        if (PossessedCharacter)
-        {
-            cursorCanvas.InitializeActionCanvas(PossessedCharacter.ActionComponent);
-            PossessedCharacter.OnCharacterDead += HandleCharacterDead;
-            PossessedCharacter.OnInputActionCanceled += HandleInputCanceled;
-            PossessedCharacter.ActionComponent.ActionCanceled += HandleActionCanceled;
-        }
-        else
-        {
-            cursorCanvas.InitializeActionCanvas(null);
         }
     }
 
