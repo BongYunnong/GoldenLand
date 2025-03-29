@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b18347c6c72f4fd498414a01c7ff9d57, type: 3}
+  m_Name: EquipmentDataSet
+  m_EditorClassIdentifier: 
+  datas:
+  - ID: Hair_Miku_001
+    EquipmentType: 0
+    Sprites:
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_Hair
+    Effects: []
+  - ID: BackHair_Miku_001
+    EquipmentType: 1
+    Sprites:
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_BackHair
+    Effects: []
+  - ID: Head_Miku_001
+    EquipmentType: 2
+    Sprites:
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_Head
+    Effects: []
+  - ID: Face_Miku_001
+    EquipmentType: 3
+    Sprites:
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_Eye
+    Effects: []
+  - ID: UpperBody_Miku_001
+    EquipmentType: 7
+    Sprites:
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_UpperBody
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_RightArm
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_RightHand
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_LeftArm
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_LeftHand
+    Effects: []
+  - ID: LowerBody_Miku_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_LowerBody
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_RightLeg
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_RightFoot
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_LeftLeg
+    - Assets/Sprites/Character/Character/Character_Miku.png=Character_Miku_LeftFoot
+    Effects: []
