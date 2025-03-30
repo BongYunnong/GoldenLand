@@ -189,7 +189,6 @@ public class Character : CharacterBase
             CancelJump();
         }
 
-        float speedMultiplier = 10.0f;
         float inputScale = speedMultiplier * inputMultiplier;
         if (dashing)
         {

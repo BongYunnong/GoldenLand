@@ -220,13 +220,13 @@ public class AIAgentComponent : MonoBehaviour
             {
                 ChangeAction(ECharacterContext.Confront);
             }
+            else if (OutSuccess && distToCurrTarget < 1)
+            {
+                ReachedToTarget();
+            }
             else if (myPath.lookPoints.Length > pathTargetIndex)
             {
                 ChangeAction(ECharacterContext.MoveTo);
-            }
-            else
-            {
-                ReachedToTarget();
             }
         }
         else
@@ -258,6 +258,7 @@ public class AIAgentComponent : MonoBehaviour
             }
         }
 
+        ChangeAction(ECharacterContext.None);
         if (OnReachedToTarget != null)
         {
             OnReachedToTarget.Invoke();

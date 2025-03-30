@@ -247,6 +247,7 @@ public class CharacterBase : MonoBehaviour
     protected bool[] mInputs = new bool[(int)EInputAction.MAX];
     protected bool[] mPrevInputs = new bool[(int)EInputAction.MAX];
 
+    [SerializeField] protected float speedMultiplier = 10.0f;
     public float inputMultiplier = 1;
     protected Vector3 velocity;
     public Vector3 Velocity { get { return velocity; } }
