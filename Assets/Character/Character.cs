@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Character : CharacterBase
+public class Character : CharacterBase, IAudioPlayable
 {
     protected PlatformerComponent platformerComponent;
     public PlatformerComponent PlatformerComponent { get
@@ -27,6 +27,17 @@ public class Character : CharacterBase
             return perceptionComponent;
         } 
     }
+    
+    protected RythmComponent rythmComponent;
+    public RythmComponent RythmComponent {get
+        {
+            if (rythmComponent == null)
+            {
+                rythmComponent = GetComponentInChildren<RythmComponent>();
+            }
+            return rythmComponent;
+        } 
+    }
 
     public Dictionary<string, bool> bookIds = new Dictionary<string, bool>();
     private Dictionary<EBookmarkType, string> bookmarks = new Dictionary<EBookmarkType, string>();
@@ -34,6 +45,7 @@ public class Character : CharacterBase
 
     protected Rigidbody ribidgeBody;
     public Rigidbody Rigidbody { get { return Rigidbody; } }
+    
 
     [Header("[Movement]")]
     protected float velocityXSmoothing = 1;
@@ -61,6 +73,9 @@ public class Character : CharacterBase
     [SerializeField] protected TrailRenderer dashTrail;
     private Tween hitShakeTween =  null;
 
+    
+    [SerializeField] protected AudioSource audioSource;
+    [SerializeField] protected List<AudioClip> audioClips = new List<AudioClip>();
     
     [Header("[AdditionalMovement]")]
     [SerializeField] private float fallDamageVelocityBound = 25f;
@@ -451,5 +466,19 @@ public class Character : CharacterBase
     public override void HandleActionFinish()
     {
         SetDodgeInfo(null);
+    }
+
+    public void PlayAudio()
+    {
+        audioSource.clip = audioClips[Random.Range(0, audioClips.Count)];
+        audioSource.Play();
+        RythmComponent.ProcessRythm(0);
+    }
+
+    public void PlayAudioWithLevel(int level)
+    {
+        audioSource.clip = audioClips[level];
+        audioSource.Play();
+        RythmComponent.ProcessRythm(0);
     }
 }

@@ -292,7 +292,7 @@ MonoBehaviour:
   effectCanvas: {fileID: 0}
   clickTargetLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   camMoveSpeed: 20
   zoomSpeed: 2
   camScaleMinMax: {x: 5, y: 15}

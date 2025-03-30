@@ -53,6 +53,7 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
     private Dictionary<string, int> cameraFocusBlockReasons = new Dictionary<string, int>();
 
     public UnityAction<Vector3> OnMouseClicked;
+    public UnityAction<Character> OnClickedCharacter;
     public UnityAction<Character, Character> OnSelectedCharacterChanged;
     public UnityAction<Character, Character> OnPossessedCharacterChanged;
     
@@ -128,7 +129,7 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
 
     private void TickClick()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             ClickMouse(Input.mousePosition, 0);
         }
@@ -469,15 +470,22 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
         if (IsCameraFocusingBlocked()) return;
 
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 0.1f, clickTargetLayer);
+        
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Physics.Raycast(ray, out RaycastHit hit, 100000, clickTargetLayer);
+        
         if (hit.collider != null)
         {
             Character hittedCharacter = hit.transform.GetComponent<Character>();
             if (index == 0)
             {
+                OnClickedCharacter.Invoke(hittedCharacter);
+            }
+            if (index == 1)
+            {
                 SelectCharacter(hittedCharacter);
             }
-            else if(index == 1)
+            else if(index == 2)
             {
                 PossessCharacter(hittedCharacter);
             }
@@ -491,9 +499,39 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
             }
 #endif
         }
+        
+        GameObject ClickEffectObj = ObjectPoolManager.GetObject("ClickEffect");
+        if (ClickEffectObj)
+        {
+            ParticleSystem currEffect = ClickEffectObj.GetComponent<ParticleSystem>();
+            Vector3 pos = GetMouseRayHitPos();
+            if (!float.IsNaN(pos.x) && !float.IsNaN(pos.y) && !float.IsNaN(pos.z))
+            {
+                currEffect.transform.position = pos;
+            }
+            else
+            {
+                currEffect.transform.SetParent(FindObjectOfType<Canvas>().transform);
+                currEffect.transform.position = MouseWorldPosition();
+            }
+            currEffect.transform.localScale = Vector3.one;
+            currEffect.Play();
+        }
     }
     
-    
+    public Vector3 MouseWorldPosition()
+    {
+        var mouseScreenPos = Input.mousePosition;
+        mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
+        return Camera.main.ScreenToWorldPoint(mouseScreenPos);
+    }
+
+    public Vector3 GetMouseRayHitPos()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        float distance = Vector3.Dot((Vector3.zero - ray.origin), Vector3.up) / Vector3.Dot(ray.direction, Vector3.up); // distance = (p0 - l0) . n / l*n
+        return ray.GetPoint(distance); // ray projection with distance
+    }
 
     private Camera GetCurrentCamera()
     {
