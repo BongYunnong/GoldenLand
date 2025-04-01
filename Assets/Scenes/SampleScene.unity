@@ -3803,6 +3803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4ab2b090d52d14b8768f9b1ddbbf7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useBuffer: 1
   sampleObjectPrefab: {fileID: 8247886602462698532, guid: c8bcfb18efeecd84e9d02b79f8acd9ec, type: 3}
   maxScale: 10
   startScale: 2
