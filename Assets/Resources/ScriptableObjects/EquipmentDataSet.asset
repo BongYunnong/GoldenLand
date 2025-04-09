@@ -51,3 +51,41 @@ MonoBehaviour:
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftLeg
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftFoot
     Effects: []
+  - ID: BackHair_72mono70nai_001
+    EquipmentType: 1
+    Sprites:
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_BackHair
+    Effects: []
+  - ID: Face_72mono70nai_001
+    EquipmentType: 3
+    Sprites:
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_Eye
+    Effects: []
+  - ID: Hair_72mono70nai_001
+    EquipmentType: 0
+    Sprites:
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_Hair
+    Effects: []
+  - ID: Head_72mono70nai_001
+    EquipmentType: 2
+    Sprites:
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_Head
+    Effects: []
+  - ID: UpperBody_72mono70nai_001
+    EquipmentType: 7
+    Sprites:
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_UpperBody
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightArm
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightHand
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftArm
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftHand
+    Effects: []
+  - ID: LowerBody_72mono70nai_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LowerBody
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightLeg
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightFoot
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftLeg
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftFoot
+    Effects: []

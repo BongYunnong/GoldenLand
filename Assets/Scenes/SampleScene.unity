@@ -1013,6 +1013,203 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &446693909
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1411294388344060170, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_Name
+      value: LobbyCharacter (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: speedMultiplier
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: audioClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: 'audioClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: df9ff1281534d15448dd0259519a1683, type: 3}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: 'audioClips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ee0d57f491bc3c429f74b432e007a3a, type: 3}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: 'audioClips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 21db995c537615247a35790c2d837646, type: 3}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: 'audioClips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0192c85ae6d6d49b5849877026fb05, type: 3}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: 'audioClips.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e8607667602e25440aa0e0ceb64a65d1, type: 3}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Key
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Key
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Key
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Key
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[0].Value
+      value: Hair_72mono70nai_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Value
+      value: BackHair_72mono70nai_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Value
+      value: Head_72mono70nai_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Value
+      value: Face_72mono70nai_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Value
+      value: UpperBody_72mono70nai_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Value
+      value: LowerBody_72mono70nai_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514468976173340662, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670112764888546661, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.equipmentPresetId
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Key
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Key
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Key
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Key
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[0].Value
+      value: Hair_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Value
+      value: BackHair_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Value
+      value: Head_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Value
+      value: Face_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Value
+      value: UpperBody_Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670732027218292151, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Value
+      value: LowerBody_Miku_001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
 --- !u!1 &453011737
 GameObject:
   m_ObjectHideFlags: 0
@@ -3803,6 +4000,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4ab2b090d52d14b8768f9b1ddbbf7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioProfile: 0
+  channel: 0
   useBuffer: 1
   sampleObjectPrefab: {fileID: 8247886602462698532, guid: c8bcfb18efeecd84e9d02b79f8acd9ec, type: 3}
   maxScale: 10
@@ -4285,6 +4484,7 @@ SceneRoots:
   - {fileID: 1272563734}
   - {fileID: 339457118}
   - {fileID: 2105874129}
+  - {fileID: 446693909}
   - {fileID: 120898062}
   - {fileID: 1201019744}
   - {fileID: 1286956134}
