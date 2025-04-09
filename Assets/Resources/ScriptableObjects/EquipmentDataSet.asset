@@ -89,3 +89,41 @@ MonoBehaviour:
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftLeg
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftFoot
     Effects: []
+  - ID: Hair_Teto_001
+    EquipmentType: 0
+    Sprites:
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_Hair
+    Effects: []
+  - ID: BackHair_Teto_001
+    EquipmentType: 1
+    Sprites:
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_BackHair
+    Effects: []
+  - ID: Head_Teto_001
+    EquipmentType: 2
+    Sprites:
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_Head
+    Effects: []
+  - ID: Face_Teto_001
+    EquipmentType: 3
+    Sprites:
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_Eye
+    Effects: []
+  - ID: UpperBody_Teto_001
+    EquipmentType: 7
+    Sprites:
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_UpperBody
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightArm
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightHand
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftArm
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftHand
+    Effects: []
+  - ID: LowerBody_Teto_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LowerBody
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightLeg
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightFoot
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftLeg
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftFoot
+    Effects: []
