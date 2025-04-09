@@ -399,6 +399,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &252946108
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 943603656050942865, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_Name
+      value: SpreadSheetLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911439642556741005, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 340fc72dd2f6e4a48a0b37c8022ae500, type: 3}
 --- !u!1 &328856951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,27 +3201,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[0].Value
-      value: Hair_Teto_001
+      value: Hair_Neru_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Value
-      value: BackHair_Teto_001
+      value: BackHair_Neru_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Value
-      value: Head_Teto_001
+      value: Head_Neru_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Value
-      value: Face_Teto_001
+      value: Face_Neru_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Value
-      value: UpperBody_Teto_001
+      value: UpperBody_Neru_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Value
-      value: LowerBody_Teto_001
+      value: LowerBody_Neru_001
       objectReference: {fileID: 0}
     - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: m_LocalScale.x
@@ -4505,3 +4562,4 @@ SceneRoots:
   - {fileID: 1427830680}
   - {fileID: 1089248468}
   - {fileID: 2105128542}
+  - {fileID: 252946108}

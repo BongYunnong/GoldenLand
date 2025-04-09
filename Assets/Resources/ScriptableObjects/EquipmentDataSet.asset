@@ -127,3 +127,41 @@ MonoBehaviour:
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftLeg
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftFoot
     Effects: []
+  - ID: Hair_Neru_001
+    EquipmentType: 0
+    Sprites:
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_Hair
+    Effects: []
+  - ID: BackHair_Neru_001
+    EquipmentType: 1
+    Sprites:
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_BackHair
+    Effects: []
+  - ID: Head_Neru_001
+    EquipmentType: 2
+    Sprites:
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_Head
+    Effects: []
+  - ID: Face_Neru_001
+    EquipmentType: 3
+    Sprites:
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_Eye
+    Effects: []
+  - ID: UpperBody_Neru_001
+    EquipmentType: 7
+    Sprites:
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_UpperBody
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightArm
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightHand
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftArm
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftHand
+    Effects: []
+  - ID: LowerBody_Neru_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LowerBody
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightLeg
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightFoot
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftLeg
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftFoot
+    Effects: []
