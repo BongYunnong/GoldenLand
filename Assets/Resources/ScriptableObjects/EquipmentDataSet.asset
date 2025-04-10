@@ -165,3 +165,41 @@ MonoBehaviour:
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftLeg
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftFoot
     Effects: []
+  - ID: Hair_DecoTelepathy_001
+    EquipmentType: 0
+    Sprites:
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_Hair
+    Effects: []
+  - ID: BackHair_DecoTelepathy_001
+    EquipmentType: 1
+    Sprites:
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_BackHair
+    Effects: []
+  - ID: Head_DecoTelepathy_001
+    EquipmentType: 2
+    Sprites:
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_Head
+    Effects: []
+  - ID: Face_DecoTelepathy_001
+    EquipmentType: 3
+    Sprites:
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_Eye
+    Effects: []
+  - ID: UpperBody_DecoTelepathy_001
+    EquipmentType: 7
+    Sprites:
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_UpperBody
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightArm
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightHand
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftArm
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftHand
+    Effects: []
+  - ID: LowerBody_DecoTelepathy_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LowerBody
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightLeg
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightFoot
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftLeg
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftFoot
+    Effects: []
