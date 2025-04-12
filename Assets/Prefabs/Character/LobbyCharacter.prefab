@@ -143,7 +143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4998689057498062193, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2632215318984674277, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -217,6 +217,14 @@ PrefabInstance:
       propertyPath: 'audioClips.Array.data[5]'
       value: 
       objectReference: {fileID: 8300000, guid: 7c03638764da61f4fbc792041a53da4f, type: 3}
+    - target: {fileID: 8339927660268229917, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339927660268229917, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 8605585110502343879, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
       propertyPath: m_Name
       value: LobbyCharacter
@@ -244,6 +252,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8605585110502343879, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3282541201768431201}
+    - targetCorrespondingSourceObject: {fileID: 8605585110502343879, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4446612493085866628}
   m_SourcePrefab: {fileID: 100100000, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
 --- !u!1 &1411294388344060170 stripped
 GameObject:
@@ -315,8 +326,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3852452584461430423}
+--- !u!114 &4446612493085866628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411294388344060170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d6175425d6d1f4bb16b92e7a254fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  innerBody: {fileID: 5062949695772796510}
+  dragOffset: {x: 0, y: 1.5, z: 0}
 --- !u!4 &4647507241508910632 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2632215318984674277, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
+  m_PrefabInstance: {fileID: 7275779416378965453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5062949695772796510 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2502865841807711123, guid: 41751230ae3bbef4cb38f13fe6d167c8, type: 3}
   m_PrefabInstance: {fileID: 7275779416378965453}
   m_PrefabAsset: {fileID: 0}

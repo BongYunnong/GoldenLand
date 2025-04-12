@@ -38,6 +38,7 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
     [SerializeField] private Canvas effectCanvas;
 
     [SerializeField] protected LayerMask clickTargetLayer;
+    [SerializeField] protected LayerMask floorTargetLayer;
     private float doubleTapMaxTimeWait = 1;
     private float doubleTapVariancePosition = 1;
 
@@ -524,6 +525,19 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
         var mouseScreenPos = Input.mousePosition;
         mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
+    }
+
+    public bool GetMouseFloorRayHitPos(ref Vector3 position)
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Physics.Raycast(ray, out RaycastHit hit, 10000, floorTargetLayer);
+        if (hit.collider)
+        {
+            position = hit.point;
+            return true;
+        }
+
+        return false;
     }
 
     public Vector3 GetMouseRayHitPos()

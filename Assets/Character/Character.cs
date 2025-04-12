@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Character : CharacterBase, IAudioPlayable
+public class Character : CharacterBase, IRythmPlayable
 {
     protected PlatformerComponent platformerComponent;
     public PlatformerComponent PlatformerComponent { get

@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class TimingManager : SingletonMonoBehavior<TimingManager>
 {
     [SerializeField] private int bpm = 120;
-    private double currentTime = 0d;
+    private double elapsedTime = 0d;
     private int beatFrameCount = 0;
     
     public UnityAction<int> beatFrameUpdated;
@@ -16,11 +16,12 @@ public class TimingManager : SingletonMonoBehavior<TimingManager>
 
     private void Update()
     {
-        currentTime += Time.deltaTime;
-        if (currentTime >= 60d / bpm)
+        elapsedTime += Time.deltaTime;
+        double bpmTimeUnit = 60d / bpm;
+        int currentFrame = (int)(elapsedTime / bpmTimeUnit);
+        if (currentFrame != beatFrameCount)
         {
-            currentTime -= 60d / bpm;
-            beatFrameCount++;
+            beatFrameCount = currentFrame;
             beatFrameUpdated.Invoke(beatFrameCount);
         }
     }

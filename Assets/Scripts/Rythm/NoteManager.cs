@@ -77,7 +77,7 @@ public class NoteManager : MonoBehaviour
     
     private void HandleClickedCharacter(Character character)
     {
-        if (character.TryGetComponent(out IAudioPlayable audioPlayable))
+        if (character.TryGetComponent(out IRythmPlayable audioPlayable))
         {
             int level = CheckTiming();
             if (level >= 0)
