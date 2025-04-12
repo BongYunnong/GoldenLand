@@ -536,8 +536,26 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
             position = hit.point;
             return true;
         }
-
         return false;
+    }
+
+    public Vector3 GetMouseRayProjectOnPlane(float groundY)
+    {
+        Vector3 mousePos = Input.mousePosition;
+        Ray ray = Camera.main.ScreenPointToRay(mousePos);
+        if (ray.direction.y == 0f)
+        {
+            return Vector3.zero;
+        }
+
+        float t = (groundY - ray.origin.y) / ray.direction.y;
+        if (t >= 0f)
+        {
+            Vector3 hitPoint = ray.origin + ray.direction * t;
+            Debug.Log("Hit point on virtual ground: " + hitPoint);
+            return hitPoint;
+        }
+        return Vector3.zero;
     }
 
     public Vector3 GetMouseRayHitPos()

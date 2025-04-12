@@ -460,6 +460,10 @@ public class Character : CharacterBase, IRythmPlayable
 
     public virtual Quaternion GetViewQauternion()
     {
+        if (perceptionComponent == null)
+        {
+            return Quaternion.identity;
+        }
         return perceptionComponent.transform.rotation;
     }
     
