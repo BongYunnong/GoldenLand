@@ -3250,27 +3250,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[0].Value
-      value: Hair_DecoTelepathy_001
+      value: Hair_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Value
-      value: BackHair_DecoTelepathy_001
+      value: BackHair_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Value
-      value: Head_DecoTelepathy_001
+      value: Head_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Value
-      value: Face_DecoTelepathy_001
+      value: Face_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Value
-      value: UpperBody_DecoTelepathy_001
+      value: UpperBody_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Value
-      value: LowerBody_DecoTelepathy_001
+      value: LowerBody_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4647507241508910632, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: m_LocalScale.x

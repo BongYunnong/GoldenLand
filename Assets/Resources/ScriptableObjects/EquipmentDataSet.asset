@@ -203,3 +203,41 @@ MonoBehaviour:
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftLeg
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftFoot
     Effects: []
+  - ID: Hair_LagTrain_001
+    EquipmentType: 0
+    Sprites:
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_Hair
+    Effects: []
+  - ID: BackHair_LagTrain_001
+    EquipmentType: 1
+    Sprites:
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_BackHair
+    Effects: []
+  - ID: Head_LagTrain_001
+    EquipmentType: 2
+    Sprites:
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_Head
+    Effects: []
+  - ID: Face_LagTrain_001
+    EquipmentType: 3
+    Sprites:
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_Eye
+    Effects: []
+  - ID: UpperBody_LagTrain_001
+    EquipmentType: 7
+    Sprites:
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_UpperBody
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightArm
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightHand
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftArm
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftHand
+    Effects: []
+  - ID: LowerBody_LagTrain_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LowerBody
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightLeg
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightFoot
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftLeg
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftFoot
+    Effects: []
