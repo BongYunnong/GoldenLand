@@ -605,8 +605,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 0ee0d57f491bc3c429f74b432e007a3a, type: 3}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.equipmentPresetId
+      value: 72mono70nai_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key
@@ -794,8 +798,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: dd0192c85ae6d6d49b5849877026fb05, type: 3}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.equipmentPresetId
+      value: Neru_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key
@@ -1377,8 +1385,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: df9ff1281534d15448dd0259519a1683, type: 3}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.equipmentPresetId
+      value: Miku_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key
@@ -2979,8 +2991,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 21db995c537615247a35790c2d837646, type: 3}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.equipmentPresetId
+      value: Teto_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key
@@ -3225,24 +3241,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: e8607667602e25440aa0e0ceb64a65d1, type: 3}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
-      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
-      value: 6
+      propertyPath: constCharacterInfo.equipmentPresetId
+      value: LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
-      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[0].Key
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
-      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Key
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
-      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Key
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Key
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
-      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Key
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Key
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Key
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Key
@@ -3250,23 +3274,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[0].Value
-      value: Hair_LagTrain_001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
-      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Value
       value: BackHair_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
-      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Value
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Value
       value: Head_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
-      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Value
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[2].Value
       value: Face_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
-      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Value
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[3].Value
       value: UpperBody_LagTrain_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[4].Value
+      value: LowerBody_LagTrain_001
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[5].Value
@@ -4299,8 +4323,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: e8607667602e25440aa0e0ceb64a65d1, type: 3}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
+      propertyPath: constCharacterInfo.equipmentPresetId
+      value: DecoTelepathy_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459665534922809180, guid: 5fc18d6d3c7255448952129c01753bb9, type: 3}
       propertyPath: constCharacterInfo.defaultEquipmentIds.list.Array.data[1].Key

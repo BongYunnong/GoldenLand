@@ -322,6 +322,10 @@ public class CharacterCustomize : MonoBehaviour
     #region Set Sprite
     public void SetSprite(ConstCharacterInfo characterData)
     {
+        if (string.IsNullOrEmpty(characterData.equipmentPresetId) == false)
+        {
+            characterData.SetupDefaultEquipmentIds();
+        }
         if(characterData.defaultEquipmentIds == null)
         {
             return;

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EquipmentPresetDataSet
   m_EditorClassIdentifier: 
   datas:
-  - ID: Miku_Base
+  - ID: Miku_001
     Hair: Hair_Miku_001
     BackHair: BackHair_Miku_001
     Head: Head_Miku_001
@@ -23,5 +23,65 @@ MonoBehaviour:
     Robe: 
     UpperBody: UpperBody_Miku_001
     LowerBody: LowerBody_Miku_001
+    BackStuff: 
+    HandStuff: 
+  - ID: 72mono70nai_001
+    Hair: Hair_72mono70nai_001
+    BackHair: BackHair_72mono70nai_001
+    Head: Head_72mono70nai_001
+    Face: Face_72mono70nai_001
+    Hat: 
+    Accessory: 
+    Robe: 
+    UpperBody: UpperBody_72mono70nai_001
+    LowerBody: LowerBody_72mono70nai_001
+    BackStuff: 
+    HandStuff: 
+  - ID: Teto_001
+    Hair: Hair_Teto_001
+    BackHair: BackHair_Teto_001
+    Head: Head_Teto_001
+    Face: Face_Teto_001
+    Hat: 
+    Accessory: 
+    Robe: 
+    UpperBody: UpperBody_Teto_001
+    LowerBody: LowerBody_Teto_001
+    BackStuff: 
+    HandStuff: 
+  - ID: Neru_001
+    Hair: Hair_Neru_001
+    BackHair: BackHair_Neru_001
+    Head: Head_Neru_001
+    Face: Face_Neru_001
+    Hat: 
+    Accessory: 
+    Robe: 
+    UpperBody: UpperBody_Neru_001
+    LowerBody: LowerBody_Neru_001
+    BackStuff: 
+    HandStuff: 
+  - ID: DecoTelepathy_001
+    Hair: Hair_DecoTelepathy_001
+    BackHair: BackHair_DecoTelepathy_001
+    Head: Head_DecoTelepathy_001
+    Face: Face_DecoTelepathy_001
+    Hat: 
+    Accessory: 
+    Robe: 
+    UpperBody: UpperBody_DecoTelepathy_001
+    LowerBody: LowerBody_DecoTelepathy_001
+    BackStuff: 
+    HandStuff: 
+  - ID: LagTrain_001
+    Hair: Hair_LagTrain_001
+    BackHair: BackHair_LagTrain_001
+    Head: Head_LagTrain_001
+    Face: Face_LagTrain_001
+    Hat: 
+    Accessory: 
+    Robe: 
+    UpperBody: UpperBody_LagTrain_001
+    LowerBody: LowerBody_LagTrain_001
     BackStuff: 
     HandStuff: 

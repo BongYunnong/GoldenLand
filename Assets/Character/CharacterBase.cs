@@ -63,20 +63,25 @@ public struct ConstCharacterInfo
         equipmentPresetId = data.EquipmentPresetId;
         
         defaultEquipmentIds = new SerializableDictionary<EEquipmentType, string>();
+        SetupDefaultEquipmentIds();
+    }
+
+    public void SetupDefaultEquipmentIds()
+    {
         if (DataManager.Instance.equipmentPresetDict.TryGetValue(equipmentPresetId,
                 out ConstEquipmentPresetInfo equipmentPresetInfo))
         {
-            defaultEquipmentIds[EEquipmentType.Hair] = equipmentPresetInfo.Hair;
-            defaultEquipmentIds[EEquipmentType.BackHair] = equipmentPresetInfo.BackHair;
-            defaultEquipmentIds[EEquipmentType.Head] = equipmentPresetInfo.Head;
-            defaultEquipmentIds[EEquipmentType.Face] = equipmentPresetInfo.Face;
-            defaultEquipmentIds[EEquipmentType.Hat] = equipmentPresetInfo.Hat;
-            defaultEquipmentIds[EEquipmentType.Accessory] = equipmentPresetInfo.Accessory;
-            defaultEquipmentIds[EEquipmentType.Robe] = equipmentPresetInfo.Robe;
-            defaultEquipmentIds[EEquipmentType.UpperBody] = equipmentPresetInfo.UpperBody;
-            defaultEquipmentIds[EEquipmentType.LowerBody] = equipmentPresetInfo.LowerBody;
-            defaultEquipmentIds[EEquipmentType.BackStuff] = equipmentPresetInfo.BackStuff;
-            defaultEquipmentIds[EEquipmentType.HandStuff] = equipmentPresetInfo.HandStuff;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.Hair)) defaultEquipmentIds[EEquipmentType.Hair] = equipmentPresetInfo.Hair;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.BackHair)) defaultEquipmentIds[EEquipmentType.BackHair] = equipmentPresetInfo.BackHair;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.Head)) defaultEquipmentIds[EEquipmentType.Head] = equipmentPresetInfo.Head;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.Face)) defaultEquipmentIds[EEquipmentType.Face] = equipmentPresetInfo.Face;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.Hat)) defaultEquipmentIds[EEquipmentType.Hat] = equipmentPresetInfo.Hat;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.Accessory)) defaultEquipmentIds[EEquipmentType.Accessory] = equipmentPresetInfo.Accessory;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.Robe)) defaultEquipmentIds[EEquipmentType.Robe] = equipmentPresetInfo.Robe;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.UpperBody)) defaultEquipmentIds[EEquipmentType.UpperBody] = equipmentPresetInfo.UpperBody;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.LowerBody)) defaultEquipmentIds[EEquipmentType.LowerBody] = equipmentPresetInfo.LowerBody;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.BackStuff)) defaultEquipmentIds[EEquipmentType.BackStuff] = equipmentPresetInfo.BackStuff;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.HandStuff)) defaultEquipmentIds[EEquipmentType.HandStuff] = equipmentPresetInfo.HandStuff;
         }
     }
 }
