@@ -39,10 +39,6 @@ public class Character : CharacterBase, IRythmPlayable
         } 
     }
 
-    public Dictionary<string, bool> bookIds = new Dictionary<string, bool>();
-    private Dictionary<EBookmarkType, string> bookmarks = new Dictionary<EBookmarkType, string>();
-    public Dictionary<EBookmarkType, string> Bookmarks {get {return bookmarks;}}
-
     protected Rigidbody ribidgeBody;
     public Rigidbody Rigidbody { get { return Rigidbody; } }
     
@@ -85,10 +81,6 @@ public class Character : CharacterBase, IRythmPlayable
     protected float accelerationTimeAirborne = 0.2f;
     protected float acceleratingTimeGrounded = .1f;
     protected float additionalVelocityDrag = 0.95f;
-    
-    public UnityAction<string> BookEquipped;
-    public UnityAction<string> BookUnequipped;
-    public UnityAction<EBookmarkType, string> BookmarkChanged;
     
     protected override void InitializeComponents()
     {
@@ -465,11 +457,6 @@ public class Character : CharacterBase, IRythmPlayable
             return Quaternion.identity;
         }
         return perceptionComponent.transform.rotation;
-    }
-    
-    public override void HandleActionFinish()
-    {
-        SetDodgeInfo(null);
     }
 
     public void PlayAudio()

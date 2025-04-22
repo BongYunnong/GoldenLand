@@ -59,7 +59,6 @@ namespace CharacterStates
         public override void Enter(CharacterBase entity)
         {
             staggerElapsedTime = 0;
-            entity.CancelCurrentAction();
             entity.SetVelocity(Vector2.zero);
             entity.SetTargetVelocity(Vector2.zero);
             entity.SetAdditionalVelocity(Vector2.zero);
@@ -104,7 +103,6 @@ namespace CharacterStates
         public override void Enter(CharacterBase entity)
         {
             stunElapsedTime = 0;
-            entity.CancelCurrentAction();
             entity.SetVelocity(Vector2.zero);
             entity.SetTargetVelocity(Vector2.zero);
             entity.SetAdditionalVelocity(Vector2.zero);
@@ -172,7 +170,6 @@ namespace CharacterStates
         public override void Enter(CharacterBase entity)
         {
             downElapsedTime += Time.deltaTime;
-            entity.CancelCurrentAction();
             entity.SetVelocity(Vector2.zero);
             entity.SetTargetVelocity(Vector2.zero);
             entity.SetAdditionalVelocity(Vector2.zero);
@@ -242,7 +239,6 @@ namespace CharacterStates
         public override void Enter(CharacterBase entity)
         {
             elapsedTime = 0;
-            entity.CancelCurrentAction();
             entity.SetVelocity(Vector2.zero);
             entity.SetTargetVelocity(Vector2.zero);
             entity.SetAdditionalVelocity(Vector2.zero);
@@ -343,7 +339,6 @@ namespace CharacterStates
         {
             forceTriggered = false;
             elapsedTime = 0;
-            entity.CancelCurrentAction();
             entity.SetVelocity(Vector2.zero);
             entity.SetTargetVelocity(Vector2.zero);
             entity.SetAdditionalVelocity(Vector2.zero);

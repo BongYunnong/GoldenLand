@@ -141,17 +141,6 @@ public class DataManager : PersistentSingletonMonoBehavior<DataManager>
     public Dictionary<string, ConstEquipmentInfo> equipmentDict = new Dictionary<string, ConstEquipmentInfo>();
     public Dictionary<EEquipmentType, Dictionary<string, ConstEquipmentInfo>> equipmentTypeDict = new Dictionary<EEquipmentType, Dictionary<string, ConstEquipmentInfo>>();
 
-    public Dictionary<string, ConstActionInfo> actionDict = new Dictionary<string, ConstActionInfo>();
-    public Dictionary<string, ConstWeaponInfo> weaponDict = new Dictionary<string, ConstWeaponInfo>();
-    public Dictionary<string, ConstActionInputInfo> actionInputDict = new Dictionary<string, ConstActionInputInfo>();
-    public Dictionary<string, ConstActionModifierInfo> actionModifierDict = new Dictionary<string, ConstActionModifierInfo>();
-    public Dictionary<string, ConstActionEffectInfo> actionEffectDict = new Dictionary<string, ConstActionEffectInfo>();
-    public Dictionary<string, ConstActionAreaInfo> actionAreaDict = new Dictionary<string, ConstActionAreaInfo>();
-
-    public Dictionary<string, ConstStatusEffectInfo> statusEffectDict = new Dictionary<string, ConstStatusEffectInfo>();
-    
-    public Dictionary<string, ConstBookInfo> bookDict = new Dictionary<string, ConstBookInfo>();
-
     public Dictionary<string, ConstAnimationClipInfo> animationClipDict = new Dictionary<string, ConstAnimationClipInfo>();
     public Dictionary<string, ConstEffectGroupInfo> effectGroupInfos = new Dictionary<string, ConstEffectGroupInfo>();
     public Dictionary<string, ConstSoundInfo> soundDict = new Dictionary<string, ConstSoundInfo>();
@@ -175,16 +164,6 @@ public class DataManager : PersistentSingletonMonoBehavior<DataManager>
         SetupEquipmentPresetDataSet();
         SetupEquipmentDataSet();
 
-        SetupBookDataSet();
-        SetupWeaponDataSet();
-        
-        SetupActionInputDataSet();
-        SetupActionModifierDataSet();
-        SetupActionEffectDataSet();
-        SetupActionAreaDataSet();
-
-        SetupStatusEffectDataSet();
-        
         SetupAnimationClipDictDataSet();
         SetupSoundDataSet();
         SetupVisualEffectDataSet();
@@ -224,79 +203,6 @@ public class DataManager : PersistentSingletonMonoBehavior<DataManager>
         }
     }
 
-    private void SetupBookDataSet()
-    {
-        bookDict.Clear();
-
-        foreach (var bookData in BookDataSet.Instance.datas)
-        {
-            ConstBookInfo bookInfo = new ConstBookInfo(bookData);
-            bookDict.Add(bookData.ID, bookInfo);
-        }
-    }
-    private void SetupWeaponDataSet()
-    {
-        weaponDict.Clear();
-
-        foreach (var weaponData in WeaponDataSet.Instance.datas)
-        {
-            ConstWeaponInfo weaponInfo = new ConstWeaponInfo(weaponData);
-            weaponDict.Add(weaponData.ID, weaponInfo);
-        }
-    }
-
-    private void SetupActionInputDataSet()
-    {
-        actionInputDict.Clear();
-
-        foreach (var actionInputData in ActionInputDataSet.Instance.datas)
-        {
-            ConstActionInputInfo actionInputInfo = new ConstActionInputInfo(actionInputData);
-            actionInputDict.Add(actionInputData.ID, actionInputInfo);
-        }
-    }
-
-    private void SetupActionModifierDataSet()
-    {
-        actionModifierDict.Clear();
-        foreach (var actionModifierData in ActionModifierDataSet.Instance.datas)
-        {
-            ConstActionModifierInfo actionModifierInfo = new ConstActionModifierInfo(actionModifierData);
-            actionModifierDict.Add(actionModifierInfo.id, actionModifierInfo);
-        }
-    }
-    
-    private void SetupActionEffectDataSet()
-    {
-        actionEffectDict.Clear();
-        foreach (var actionEffectData in ActionEffectDataSet.Instance.datas)
-        {
-            ConstActionEffectInfo actionEffectInfo = new ConstActionEffectInfo(actionEffectData);
-            actionEffectDict.Add(actionEffectInfo.ID, actionEffectInfo);
-        }
-    }
-    
-    private void SetupActionAreaDataSet()
-    {
-        actionAreaDict.Clear();
-        foreach (var actionAreaData in ActionAreaDataSet.Instance.datas)
-        {
-            ConstActionAreaInfo actionAreaInfo = new ConstActionAreaInfo(actionAreaData);
-            actionAreaDict.Add(actionAreaInfo.Id, actionAreaInfo);
-        }
-    }
-    
-    private void SetupStatusEffectDataSet()
-    {
-        statusEffectDict.Clear();
-
-        foreach (var statusEffectData in StatusEffectDataSet.Instance.datas)
-        {
-            ConstStatusEffectInfo statusEffectInfo = new ConstStatusEffectInfo(statusEffectData);
-            statusEffectDict.Add(statusEffectData.ID, statusEffectInfo);
-        }
-    }
-    
     private void SetupAnimationClipDictDataSet()
     {
         animationClipDict.Clear();

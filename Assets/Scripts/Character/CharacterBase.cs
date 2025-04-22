@@ -91,114 +91,7 @@ public struct ConstCharacterInfo
 public class CharacterInfo
 {
     public string characterID = null;
-    public List<string> bookIds = new List<string>();
-    public List<string> bookMarks = new List<string>();
-    public List<SpecInfo> specInfos = new List<SpecInfo>();
-    public IReadOnlyList<SpecInfo> SpecInfos => specInfos;
     public SerializableDictionary<EEquipmentType, string> equipments = new SerializableDictionary<EEquipmentType, string>();
-
-
-    public void AddAllSpecExperience(int addExp)
-    {
-        for(int i=0; i < (int)ESpecType.MAX; i++)
-        {
-            AddSpecExperience((ESpecType)i, addExp);
-        }
-    }
-
-    public void AddSpecExperience(ESpecType specType, int addExp)
-    {
-        SpecInfo currSpecInfo = GetSpecInfo(specType);
-        if(currSpecInfo == null)
-        {
-            currSpecInfo = new SpecInfo();
-            currSpecInfo.specType = specType;
-            currSpecInfo.AddSpecExperience(addExp);
-            specInfos.Add(currSpecInfo);
-        }
-        else
-        {
-            currSpecInfo.AddSpecExperience(addExp);
-        }
-    }
-
-    public SpecInfo GetSpecInfo(ESpecType specType)
-    {
-        return specInfos.Find(x => x.specType == specType);
-    }
-
-    public List<string> GetPersonalityIds()
-    {
-        List<string> personalityIds = new List<string>();
-        DataManager dataManager = DataManager.Instance;
-        for (int i = 0; i < bookIds.Count; i++)
-        {
-            string bookId = bookIds[i];
-            if (dataManager.bookDict.TryGetValue(bookId, out ConstBookInfo constBookInfo))
-            {
-                for (int j = 0; j < constBookInfo.PersonalityIds.Count; j++)
-                {
-                    string personalityId = constBookInfo.PersonalityIds[j];
-                    personalityIds.Add(personalityId);
-                }
-            }
-        }
-        return personalityIds;
-    }
-
-    public bool HasBook(string bookId)
-    {
-        int foundedIndex = bookIds.FindIndex(x => x == bookId);
-        return foundedIndex >= 0;
-    }
-    public void AddBookId(string bookId)
-    {
-        int foundedIndex = bookIds.FindIndex(x => x == bookId);
-        if (foundedIndex >= 0)
-        {
-            return;
-        }
-        bookIds.Add(bookId);
-    }
-    public void RemoveBookId(string bookId)
-    {
-        int foundedIndex = bookIds.FindIndex(x => x == bookId);
-        if (foundedIndex >= 0)
-        {
-            bookIds.RemoveAt(foundedIndex);
-        }
-    }
-
-    public void SetBookmark(EBookmarkType bookmarkType, string bookId)
-    {
-        // Type index에 값이 없으면 추가 필요
-        for (int i = bookMarks.Count; i <= (int)bookmarkType; i++)
-        {
-            bookMarks.Add(null);
-        }
-        bookMarks[(int)bookmarkType] = bookId;
-    }
-
-    public string GetBookmarkedBookId(EBookmarkType bookmarkType)
-    {
-        // Type index에 값이 없으면 추가 필요
-        for (int i = bookMarks.Count; i <= (int)bookmarkType; i++)
-        {
-            bookMarks.Add(null);
-        }
-        return bookMarks[(int)bookmarkType];
-    }
-    public EBookmarkType GetBookmarkedType(string bookId)
-    {
-        for (int i = 0; i < bookMarks.Count; i++)
-        {
-            if (bookMarks[i] == bookId)
-            {
-                return (EBookmarkType)i;
-            }
-        }
-        return EBookmarkType.MAX;
-    }
 }
 
 public class CharacterBase : MonoBehaviour
@@ -216,18 +109,6 @@ public class CharacterBase : MonoBehaviour
     public CharacterSocketComponent CharacterSocketComponent { get { return characterSocketComponent; } }
 
     protected Animator anim;
-    
-    protected ActionComponent actionComponent;
-    public ActionComponent ActionComponent { get
-        {
-            if (actionComponent == null)
-            {
-                actionComponent = GetComponentInChildren<ActionComponent>();
-                actionComponent.InitializeActionComponent(this);
-            }
-            return actionComponent;
-        } 
-    }
     
     private GameplayTagContainer gameplayTagContainer = new GameplayTagContainer();
     public GameplayTagContainer GameplayTagContainer {get { return gameplayTagContainer; } }
@@ -607,16 +488,5 @@ public class CharacterBase : MonoBehaviour
             }
         }
         return false;
-    }
-
-    
-    public void CancelCurrentAction()
-    {
-        ActionComponent.CancelCurrentAction();
-    }
-
-    public virtual void HandleActionFinish()
-    {
-        
     }
 }
