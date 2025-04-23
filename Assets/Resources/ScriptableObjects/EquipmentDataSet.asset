@@ -22,6 +22,8 @@ MonoBehaviour:
     EquipmentType: 1
     Sprites:
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_BackHair
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftBackHair
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightBackHair
     Effects: []
   - ID: Head_Miku_001
     EquipmentType: 2
@@ -98,6 +100,8 @@ MonoBehaviour:
     EquipmentType: 1
     Sprites:
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_BackHair
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftBackHair
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightBackHair
     Effects: []
   - ID: Head_Teto_001
     EquipmentType: 2
@@ -136,6 +140,7 @@ MonoBehaviour:
     EquipmentType: 1
     Sprites:
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_BackHair
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftBackHair
     Effects: []
   - ID: Head_Neru_001
     EquipmentType: 2
@@ -174,6 +179,8 @@ MonoBehaviour:
     EquipmentType: 1
     Sprites:
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_BackHair
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftBackHair
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightBackHair
     Effects: []
   - ID: Head_DecoTelepathy_001
     EquipmentType: 2
@@ -212,6 +219,8 @@ MonoBehaviour:
     EquipmentType: 1
     Sprites:
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_BackHair
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftBackHair
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightBackHair
     Effects: []
   - ID: Head_LagTrain_001
     EquipmentType: 2

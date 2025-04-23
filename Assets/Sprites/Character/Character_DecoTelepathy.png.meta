@@ -119,6 +119,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -272,50 +285,6 @@ TextureImporter:
       bones: []
       spriteID: 49cc9f8ede6dff5a0800000000000000
       internalID: -6485228621085946732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_DecoTelepathy_BackHat
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f4a98864f1bc8da0800000000000000
-      internalID: -5941178145124539148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_DecoTelepathy_Hat
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4dcbc9bf9bc44d990800000000000000
-      internalID: -7362175129169904428
       vertices: []
       indices: 
       edges: []
@@ -496,6 +465,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_LeftBackHair
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c4c802000000000800000000000000
+      internalID: 546065565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_RightBackHair
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.46875, y: 0.734375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042280f5000000000800000000000000
+      internalID: 1594368576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_BackHat
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4a98864f1bc8da0800000000000000
+      internalID: -5941178145124539148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_Hat
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dcbc9bf9bc44d990800000000000000
+      internalID: -7362175129169904428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -518,11 +575,13 @@ TextureImporter:
       Character_DecoTelepathy_Hat: -7362175129169904428
       Character_DecoTelepathy_Head: 4117618435803035816
       Character_DecoTelepathy_LeftArm: -3452949537761011518
+      Character_DecoTelepathy_LeftBackHair: 546065565
       Character_DecoTelepathy_LeftFoot: 5700816624729307831
       Character_DecoTelepathy_LeftHand: -6037620383121816594
       Character_DecoTelepathy_LeftLeg: -2198481979394461096
       Character_DecoTelepathy_LowerBody: -6485228621085946732
       Character_DecoTelepathy_RightArm: 2290604882322334890
+      Character_DecoTelepathy_RightBackHair: 1594368576
       Character_DecoTelepathy_RightFoot: 2893431929235910769
       Character_DecoTelepathy_RightHand: -917266418525252550
       Character_DecoTelepathy_RightLeg: -8640622651815990216

@@ -13,6 +13,8 @@ public class CharacterCustomize : MonoBehaviour
     #region Variables & Initializer
     [SerializeField] private LayeredSpriteRenderer HairSR;
     [SerializeField] private LayeredSpriteRenderer BackHairSR;
+    [SerializeField] private LayeredSpriteRenderer LeftBackHairSR;
+    [SerializeField] private LayeredSpriteRenderer RightBackHairSR;
     [SerializeField] private LayeredSpriteRenderer HeadSR;
     [SerializeField] private LayeredSpriteRenderer FaceSR;
     [SerializeField] private LayeredSpriteRenderer HatSR;
@@ -133,7 +135,7 @@ public class CharacterCustomize : MonoBehaviour
         switch (equipmentType)
         {
             case EEquipmentType.Hair: outSRs.Add(HairSR); break;
-            case EEquipmentType.BackHair: outSRs.Add(BackHairSR); break;
+            case EEquipmentType.BackHair: outSRs.Add(BackHairSR);  outSRs.Add(LeftBackHairSR); outSRs.Add(RightBackHairSR);break;
             case EEquipmentType.Head: outSRs.Add(HeadSR); break;
             case EEquipmentType.Face: outSRs.Add(FaceSR); break;
             case EEquipmentType.Hat: outSRs.Add(HatSR); outSRs.Add(BackHatSR); break;
@@ -171,6 +173,8 @@ public class CharacterCustomize : MonoBehaviour
     {
         HairSR.EnableOutline(bUseOutline);
         BackHairSR.EnableOutline(bUseOutline);
+        LeftBackHairSR.EnableOutline(bUseOutline);
+        RightBackHairSR.EnableOutline(bUseOutline);
         HeadSR.EnableOutline(bUseOutline);
         FaceSR.EnableOutline(bUseOutline);
         HatSR.EnableOutline(bUseOutline);
@@ -199,6 +203,8 @@ public class CharacterCustomize : MonoBehaviour
     {
         HairSR.SetOutlineColor(color);
         BackHairSR.SetOutlineColor(color);
+        LeftBackHairSR.SetOutlineColor(color);
+        RightBackHairSR.SetOutlineColor(color);
         HeadSR.SetOutlineColor(color);
         FaceSR.SetOutlineColor(color);
         HatSR.SetOutlineColor(color);
@@ -227,6 +233,8 @@ public class CharacterCustomize : MonoBehaviour
     {
         HairSR.SetMainMaterial(material);
         BackHairSR.SetMainMaterial(material);
+        LeftBackHairSR.SetMainMaterial(material);
+        RightBackHairSR.SetMainMaterial(material);
         HeadSR.SetMainMaterial(material);
         FaceSR.SetMainMaterial(material);
         HatSR.SetMainMaterial(material);
@@ -390,15 +398,31 @@ public class CharacterCustomize : MonoBehaviour
         switch (type)
         {
             case EEquipmentType.BackHair:
+                LeftBackHairSR.SetSprite(null);
+                RightBackHairSR.SetSprite(null);
                 if (isNillOrEmpty)
+                {
                     BackHairSR.SetSprite(null);
+                }
                 else
+                {
                     BackHairSR.SetSprite(equipmentInfo.sprites[0]);
+                    if (equipmentInfo.sprites.Count > 1)
+                    {
+                        LeftBackHairSR.SetSprite(equipmentInfo.sprites[1]);
+                    }
+                    if (equipmentInfo.sprites.Count > 2)
+                    {
+                        RightBackHairSR.SetSprite(equipmentInfo.sprites[2]);
+                    }
+                }
                 Color tmpColor = HairSR.GetColor();
                 tmpColor.r -= 0.1f;
                 tmpColor.g -= 0.1f;
                 tmpColor.b -= 0.1f;
                 BackHairSR.SetColor(tmpColor);
+                LeftBackHairSR.SetColor(tmpColor);
+                RightBackHairSR.SetColor(tmpColor);
                 artifactColors[(int)EEquipmentType.BackHair] = artifactColors[(int)EEquipmentType.Hair] - new Color(0.1f, 0.1f, 0.1f, -100f);
                 break;
             case EEquipmentType.Hair:
@@ -554,6 +578,8 @@ public class CharacterCustomize : MonoBehaviour
     public void ResetColor()
     {
         BackHairSR.SetColor(artifactColors[(int)EEquipmentType.BackHair]);
+        LeftBackHairSR.SetColor(artifactColors[(int)EEquipmentType.BackHair]);
+        RightBackHairSR.SetColor(artifactColors[(int)EEquipmentType.BackHair]);
         HairSR.SetColor(artifactColors[(int)EEquipmentType.Hair]);
         HeadSR.SetColor(artifactColors[(int)EEquipmentType.Head]);
         FaceSR.SetSprite(myFaceSprite);
@@ -588,6 +614,8 @@ public class CharacterCustomize : MonoBehaviour
     public void SetTemporalSpriteColor(Color targetColor,float speed)
     {
         BackHairSR.SetColor(Color.Lerp(BackHairSR.GetColor(),targetColor,speed*Time.deltaTime));
+        LeftBackHairSR.SetColor(Color.Lerp(LeftBackHairSR.GetColor(),targetColor,speed*Time.deltaTime));
+        RightBackHairSR.SetColor(Color.Lerp(RightBackHairSR.GetColor(),targetColor,speed*Time.deltaTime));
         HairSR.SetColor(Color.Lerp(HairSR.GetColor(), targetColor, speed * Time.deltaTime));
         HeadSR.SetColor(Color.Lerp(HeadSR.GetColor(), targetColor, speed * Time.deltaTime));
         FaceSR.SetColor(Color.Lerp(FaceSR.GetColor(), targetColor, speed * Time.deltaTime));
