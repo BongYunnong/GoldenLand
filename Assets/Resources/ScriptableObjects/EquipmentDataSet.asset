@@ -141,6 +141,7 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_BackHair
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftBackHair
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightBackHair
     Effects: []
   - ID: Head_Neru_001
     EquipmentType: 2

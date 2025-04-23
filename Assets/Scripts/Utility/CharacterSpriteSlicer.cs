@@ -72,8 +72,8 @@ public class CharacterSpriteSlicer
 
 		Dictionary<string, SpriteSliceInfo> SliceInfos = new Dictionary<string, SpriteSliceInfo>();
 		SliceInfos.Add("BackHair", new SpriteSliceInfo("BackHair", new Rect(0, 192, 64, 64), new Vector2(32, 36)));
-		SliceInfos.Add("LeftBackHair", new SpriteSliceInfo("LeftBackHair", new Rect(64, 192, 32, 64), new Vector2(16, 32)));
-		SliceInfos.Add("RightBackHair", new SpriteSliceInfo("RightBackHair", new Rect(96, 192, 32, 64), new Vector2(16, 32)));
+		SliceInfos.Add("RightBackHair", new SpriteSliceInfo("RightBackHair", new Rect(64, 192, 32, 64), new Vector2(16, 32)));
+		SliceInfos.Add("LeftBackHair", new SpriteSliceInfo("LeftBackHair", new Rect(96, 192, 32, 64), new Vector2(16, 32)));
 		SliceInfos.Add("Hair", new SpriteSliceInfo("Hair", new Rect(0, 128, 64, 64), new Vector2(32, 18)));
 		SliceInfos.Add("Head", new SpriteSliceInfo("Head", new Rect(0, 96, 64, 32), new Vector2(32, 5)));
 		SliceInfos.Add("Eye", new SpriteSliceInfo("Eye", new Rect(0, 64, 64, 32), new Vector2(32, 12)));

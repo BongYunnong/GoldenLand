@@ -47,7 +47,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0, y: -1}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -469,7 +469,7 @@ TextureImporter:
       name: Character_72mono70nai_LeftBackHair
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 192
         width: 32
         height: 64
@@ -491,7 +491,7 @@ TextureImporter:
       name: Character_72mono70nai_RightBackHair
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 192
         width: 32
         height: 64

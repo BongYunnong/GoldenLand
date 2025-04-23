@@ -469,12 +469,12 @@ TextureImporter:
       name: Character_Miku_LeftBackHair
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 192
         width: 32
         height: 64
       alignment: 9
-      pivot: {x: 0.65625, y: 0.84375}
+      pivot: {x: 0.3125, y: 0.796875}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -491,12 +491,12 @@ TextureImporter:
       name: Character_Miku_RightBackHair
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 192
         width: 32
         height: 64
       alignment: 9
-      pivot: {x: 0.34375, y: 0.84375}
+      pivot: {x: 0.65625, y: 0.796875}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
