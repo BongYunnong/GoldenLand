@@ -85,3 +85,39 @@ MonoBehaviour:
     LowerBody: LowerBody_LagTrain_001
     BackStuff: 
     HandStuff: 
+  - ID: LemonMelonCookie_001
+    Hair: Hair_LemonMelonCookie_001
+    BackHair: BackHair_LemonMelonCookie_001
+    Head: Head_LemonMelonCookie_001
+    Face: Face_LemonMelonCookie_001
+    Hat: 
+    Accessory: Accessory_LemonMelonCookie_001
+    Robe: 
+    UpperBody: UpperBody_LemonMelonCookie_001
+    LowerBody: LowerBody_LemonMelonCookie_001
+    BackStuff: 
+    HandStuff: 
+  - ID: Odotchina_Miku_001
+    Hair: Hair_Odotchina_Miku_001
+    BackHair: BackHair_Odotchina_Miku_001
+    Head: Head_Odotchina_Miku_001
+    Face: Face_Odotchina_Miku_001
+    Hat: 
+    Accessory: Accessory_Odotchina_Miku_001
+    Robe: 
+    UpperBody: UpperBody_Odotchina_Miku_001
+    LowerBody: LowerBody_Odotchina_Miku_001
+    BackStuff: 
+    HandStuff: 
+  - ID: Odotchina_Teto_001
+    Hair: Hair_Odotchina_Teto_001
+    BackHair: BackHair_Odotchina_Teto_001
+    Head: Head_Odotchina_Teto_001
+    Face: Face_Odotchina_Teto_001
+    Hat: Hat_Odotchina_Teto_001
+    Accessory: 
+    Robe: 
+    UpperBody: UpperBody_Odotchina_Teto_001
+    LowerBody: LowerBody_Odotchina_Teto_001
+    BackStuff: 
+    HandStuff: 

@@ -80,8 +80,8 @@ public class CharacterSpriteSlicer
 		SliceInfos.Add("Accessory", new SpriteSliceInfo("Accessory", new Rect(0, 32, 64, 32), new Vector2(32, 7)));
 		SliceInfos.Add("UpperBody", new SpriteSliceInfo("UpperBody", new Rect(0, 0, 32, 32), new Vector2(16, 9)));
 		SliceInfos.Add("LowerBody", new SpriteSliceInfo("LowerBody", new Rect(32, 0, 32, 32), new Vector2(16, 16)));
-		SliceInfos.Add("BackHat", new SpriteSliceInfo("BackHat", new Rect(64, 160, 64, 32), new Vector2(32, 16)));
-		SliceInfos.Add("Hat", new SpriteSliceInfo("Hat", new Rect(64, 128, 64, 32), new Vector2(32, 16)));
+		SliceInfos.Add("Hat", new SpriteSliceInfo("Hat", new Rect(64, 160, 64, 32), new Vector2(32, 16)));
+		SliceInfos.Add("BackHat", new SpriteSliceInfo("BackHat", new Rect(64, 128, 64, 32), new Vector2(32, 16)));
 		
 		SliceInfos.Add("RightArm", new SpriteSliceInfo("RightArm", new Rect(64, 96, 32, 32), new Vector2(16, 22)));
 		SliceInfos.Add("RightHand", new SpriteSliceInfo("RightHand", new Rect(64, 64, 32, 32), new Vector2(15, 19)));

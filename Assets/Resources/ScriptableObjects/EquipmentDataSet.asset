@@ -251,3 +251,138 @@ MonoBehaviour:
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftLeg
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftFoot
     Effects: []
+  - ID: Hair_LemonMelonCookie_001
+    EquipmentType: 0
+    Sprites:
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_Hair
+    Effects: []
+  - ID: BackHair_LemonMelonCookie_001
+    EquipmentType: 1
+    Sprites:
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_BackHair
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftBackHair
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightBackHair
+    Effects: []
+  - ID: Accessory_LemonMelonCookie_001
+    EquipmentType: 5
+    Sprites:
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_Accessory
+    Effects: []
+  - ID: Head_LemonMelonCookie_001
+    EquipmentType: 2
+    Sprites:
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_Head
+    Effects: []
+  - ID: Face_LemonMelonCookie_001
+    EquipmentType: 3
+    Sprites:
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_Eye
+    Effects: []
+  - ID: UpperBody_LemonMelonCookie_001
+    EquipmentType: 7
+    Sprites:
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_UpperBody
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightArm
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightHand
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftArm
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftHand
+    Effects: []
+  - ID: LowerBody_LemonMelonCookie_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LowerBody
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightLeg
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightFoot
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftLeg
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftFoot
+    Effects: []
+  - ID: Hair_Odotchina_Miku_001
+    EquipmentType: 0
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_Hair
+    Effects: []
+  - ID: BackHair_Odotchina_Miku_001
+    EquipmentType: 1
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_BackHair
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftBackHair
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightBackHair
+    Effects: []
+  - ID: Accessory_Odotchina_Miku_001
+    EquipmentType: 5
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_Accessory
+    Effects: []
+  - ID: Head_Odotchina_Miku_001
+    EquipmentType: 2
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_Head
+    Effects: []
+  - ID: Face_Odotchina_Miku_001
+    EquipmentType: 3
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_Eye
+    Effects: []
+  - ID: UpperBody_Odotchina_Miku_001
+    EquipmentType: 7
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_UpperBody
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightArm
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightHand
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftArm
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftHand
+    Effects: []
+  - ID: LowerBody_Odotchina_Miku_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LowerBody
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightLeg
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightFoot
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftLeg
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftFoot
+    Effects: []
+  - ID: Hair_Odotchina_Teto_001
+    EquipmentType: 0
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_Hair
+    Effects: []
+  - ID: BackHair_Odotchina_Teto_001
+    EquipmentType: 1
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_BackHair
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftBackHair
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightBackHair
+    Effects: []
+  - ID: Hat_Odotchina_Teto_001
+    EquipmentType: 4
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_Hat
+    Effects: []
+  - ID: Head_Odotchina_Teto_001
+    EquipmentType: 2
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_Head
+    Effects: []
+  - ID: Face_Odotchina_Teto_001
+    EquipmentType: 3
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_Eye
+    Effects: []
+  - ID: UpperBody_Odotchina_Teto_001
+    EquipmentType: 7
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_UpperBody
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightArm
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightHand
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftArm
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftHand
+    Effects: []
+  - ID: LowerBody_Odotchina_Teto_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LowerBody
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightLeg
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightFoot
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftLeg
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftFoot
+    Effects: []
