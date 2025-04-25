@@ -30,6 +30,8 @@ public class EquipmentPresetDataSet : SingletonScriptableObject<EquipmentPresetD
 		public string LowerBody;
 		public string BackStuff;
 		public string HandStuff;
+		public string LeftHand;
+		public string RightHand;
 	}
 
 	public void AddData(TableData data)

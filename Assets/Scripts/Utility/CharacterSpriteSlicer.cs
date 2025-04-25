@@ -15,6 +15,8 @@ public enum EEquipmentType
 	Accessory,
 	Robe,
 	UpperBody,
+	RightHand,
+	LeftHand,
 	LowerBody,
 	BackStuff,
 	HandStuff,

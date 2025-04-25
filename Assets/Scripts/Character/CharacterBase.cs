@@ -82,6 +82,8 @@ public struct ConstCharacterInfo
             if(!defaultEquipmentIds.ContainsKey(EEquipmentType.LowerBody)) defaultEquipmentIds[EEquipmentType.LowerBody] = equipmentPresetInfo.LowerBody;
             if(!defaultEquipmentIds.ContainsKey(EEquipmentType.BackStuff)) defaultEquipmentIds[EEquipmentType.BackStuff] = equipmentPresetInfo.BackStuff;
             if(!defaultEquipmentIds.ContainsKey(EEquipmentType.HandStuff)) defaultEquipmentIds[EEquipmentType.HandStuff] = equipmentPresetInfo.HandStuff;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.LeftHand)) defaultEquipmentIds[EEquipmentType.LeftHand] = equipmentPresetInfo.LeftHand;
+            if(!defaultEquipmentIds.ContainsKey(EEquipmentType.RightHand)) defaultEquipmentIds[EEquipmentType.RightHand] = equipmentPresetInfo.RightHand;
         }
     }
 }

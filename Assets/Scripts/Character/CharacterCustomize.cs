@@ -26,10 +26,10 @@ public class CharacterCustomize : MonoBehaviour
     [SerializeField] private LayeredSpriteRenderer RobeRightArmSR;
     [SerializeField] private LayeredSpriteRenderer UpperBodySR;
     [SerializeField] private LayeredSpriteRenderer LeftArmSR;
-    [SerializeField] private LayeredSpriteRenderer LeftHandSR;
+    [SerializeField] private CharacterHand LeftHandSR;
     [SerializeField] private LayeredSpriteRenderer LeftHandStuffSR;
     [SerializeField] private LayeredSpriteRenderer RightArmSR;
-    [SerializeField] private LayeredSpriteRenderer RightHandSR;
+    [SerializeField] private CharacterHand RightHandSR;
     [SerializeField] private LayeredSpriteRenderer RightHandStuffSR;
     [SerializeField] private LayeredSpriteRenderer LowerBodySR;
     [SerializeField] private LayeredSpriteRenderer LeftLegSR;
@@ -141,7 +141,9 @@ public class CharacterCustomize : MonoBehaviour
             case EEquipmentType.Hat: outSRs.Add(HatSR); outSRs.Add(BackHatSR); break;
             case EEquipmentType.Accessory: outSRs.Add(AccessorySR); break;
             case EEquipmentType.Robe: outSRs.Add(RobeSR); outSRs.Add(RobeLeftArmSR); outSRs.Add(RobeRightArmSR); break;
-            case EEquipmentType.UpperBody: outSRs.Add(UpperBodySR); outSRs.Add(LeftArmSR); outSRs.Add(RightArmSR); outSRs.Add(LeftHandSR); outSRs.Add(RightHandSR); break;
+            case EEquipmentType.UpperBody: outSRs.Add(UpperBodySR); outSRs.Add(LeftArmSR); outSRs.Add(RightArmSR); break;
+            // case EEquipmentType.LeftHand: outSRs.Add(LeftHandSR); break;
+            // case EEquipmentType.RightHand: outSRs.Add(RightHandSR); break;
             case EEquipmentType.LowerBody: outSRs.Add(LowerBodySR); outSRs.Add(LeftLegSR); outSRs.Add(RightLegSR); outSRs.Add(LeftFootSR); outSRs.Add(RightFootSR); break;
             case EEquipmentType.BackStuff: outSRs.Add(BackStuffSR); break;
             case EEquipmentType.HandStuff: outSRs.Add(LeftHandStuffSR); outSRs.Add(RightHandStuffSR); break;
@@ -375,6 +377,8 @@ public class CharacterCustomize : MonoBehaviour
         SetSprite(EEquipmentType.LowerBody, equipmentPresetInfo.LowerBody);
         SetSprite(EEquipmentType.BackStuff, equipmentPresetInfo.BackStuff);
         SetSprite(EEquipmentType.HandStuff, equipmentPresetInfo.HandStuff);
+        SetSprite(EEquipmentType.LeftHand, equipmentPresetInfo.LeftHand);
+        SetSprite(EEquipmentType.RightHand, equipmentPresetInfo.RightHand);
     }
     public string GetEquipmentId(EEquipmentType equipmentType)
     {
@@ -499,23 +503,39 @@ public class CharacterCustomize : MonoBehaviour
                 {
                     UpperBodySR.SetSprite(null);
                     RightArmSR.SetSprite(null);
-                    RightHandSR.SetSprite(null);
                     LeftArmSR.SetSprite(null);
-                    LeftHandSR.SetSprite(null);
                 }
                 else
                 {
                     UpperBodySR.SetSprite(equipmentInfo.sprites[0]);
                     RightArmSR.SetSprite(equipmentInfo.sprites[1]);
-                    RightHandSR.SetSprite(equipmentInfo.sprites[2]);
-                    LeftArmSR.SetSprite(equipmentInfo.sprites[3]);
-                    LeftHandSR.SetSprite(equipmentInfo.sprites[4]);
+                    LeftArmSR.SetSprite(equipmentInfo.sprites[2]);
                 }
                 UpperBodySR.SetColor(artifactColor);
                 RightArmSR.SetColor(artifactColor);
-                RightHandSR.SetColor(artifactColor);
                 LeftArmSR.SetColor(artifactColor);
+                break;
+            case EEquipmentType.LeftHand:
+                if (isNillOrEmpty)
+                {
+                    LeftHandSR.SetSprites(null);
+                }
+                else
+                {
+                    LeftHandSR.SetSprites(equipmentInfo.sprites);
+                }
                 LeftHandSR.SetColor(artifactColor);
+                break;
+            case EEquipmentType.RightHand:
+                if (isNillOrEmpty)
+                {
+                    RightHandSR.SetSprites(null);
+                }
+                else
+                {
+                    RightHandSR.SetSprites(equipmentInfo.sprites);
+                }
+                RightHandSR.SetColor(artifactColor);
                 break;
             case EEquipmentType.LowerBody:
                 if (isNillOrEmpty)

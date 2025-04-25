@@ -16,6 +16,8 @@ public class ConstEquipmentPresetInfo
     public string LowerBody;
     public string BackStuff;
     public string HandStuff;
+    public string LeftHand;
+    public string RightHand;
 
     public ConstEquipmentPresetInfo(EquipmentPresetDataSet.TableData data)
     {
@@ -31,6 +33,8 @@ public class ConstEquipmentPresetInfo
         this.LowerBody = data.LowerBody;
         this.BackStuff = data.BackStuff;
         this.HandStuff = data.HandStuff;
+        this.LeftHand = data.LeftHand;
+        this.RightHand = data.RightHand;
     }
 }
 
