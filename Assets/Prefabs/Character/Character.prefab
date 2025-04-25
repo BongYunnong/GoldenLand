@@ -142,9 +142,6 @@ MonoBehaviour:
       list: []
   characterInfo:
     characterID: 
-    bookIds: []
-    bookMarks: []
-    specInfos: []
     equipments:
       list: []
   characterCustomize: {fileID: 0}
@@ -154,6 +151,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0}
   forceViewDirX: 0
   CanGetInput: 1
+  speedMultiplier: 10
   inputMultiplier: 1
   f_CutJumpHeight: 0.5
   f_JumpPressedRemember: 0
@@ -161,6 +159,8 @@ MonoBehaviour:
   dashing: 0
   dashSpeedMultiplier: 1.5
   dashTrail: {fileID: 0}
+  audioSource: {fileID: 0}
+  audioClips: []
   fallDamageVelocityBound: 25
   fallDamageMul: 0.1
   fallDamageBounceForce: 3

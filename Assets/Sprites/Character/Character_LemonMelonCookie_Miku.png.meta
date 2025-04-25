@@ -47,7 +47,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: 0, y: -1}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -144,7 +144,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.234375}
+      pivot: {x: 0.5, y: 0.5625}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -166,7 +166,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 9
-      pivot: {x: 0.6875, y: 0.703125}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,7 +188,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 9
-      pivot: {x: 0.28125, y: 0.71875}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,7 +276,7 @@ TextureImporter:
         width: 64
         height: 32
       alignment: 9
-      pivot: {x: 0.53125, y: -0.15625}
+      pivot: {x: 0.5, y: 0.21875}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,7 +334,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_LemonMelonCookie_Miku_BackHat
+      name: Character_LemonMelonCookie_Miku_Hat
       rect:
         serializedVersion: 2
         x: 64
@@ -349,14 +349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc0e5f6f337cfede0800000000000000
-      internalID: -1301602741286215475
+      spriteID: eb2efbf1909673b70800000000000000
+      internalID: 8878680678292513470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_LemonMelonCookie_Miku_Hat
+      name: Character_LemonMelonCookie_Miku_BackHat
       rect:
         serializedVersion: 2
         x: 64
@@ -371,8 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb2efbf1909673b70800000000000000
-      internalID: 8878680678292513470
+      spriteID: dc0e5f6f337cfede0800000000000000
+      internalID: -1301602741286215475
       vertices: []
       indices: 
       edges: []
@@ -404,11 +404,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
-        width: 32
-        height: 32
+        y: 80
+        width: 16
+        height: 16
       alignment: 9
-      pivot: {x: 0.46875, y: 0.59375}
+      pivot: {x: 0.5, y: 0.6875}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -417,6 +417,138 @@ TextureImporter:
       bones: []
       spriteID: 1bf0f80679ac815a0800000000000000
       internalID: -6550262906501525583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_RightHand_Back
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3da34affffffff0800000000000000
+      internalID: -1539648589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_RightHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34416e0effffffff0800000000000000
+      internalID: -521792445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_RightHand_Index
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d591e08affffffff0800000000000000
+      internalID: -1475471011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_RightHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f764abcffffffff0800000000000000
+      internalID: -878417928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_RightHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0551326000000000800000000000000
+      internalID: 1647400205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_RightHand_Little
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3520d6000000000800000000000000
+      internalID: 1828869102
       vertices: []
       indices: 
       edges: []
@@ -448,11 +580,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 64
-        width: 32
-        height: 32
+        y: 80
+        width: 16
+        height: 16
       alignment: 9
-      pivot: {x: 0.53125, y: 0.59375}
+      pivot: {x: 0.5, y: 0.6875}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -461,6 +593,138 @@ TextureImporter:
       bones: []
       spriteID: 314405d38b850ac80800000000000000
       internalID: -8313547363800038381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_LeftHand_Back
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ef7e84000000000800000000000000
+      internalID: 1223163496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_LeftHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115127acffffffff0800000000000000
+      internalID: -898493167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_LeftHand_Index
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eae3d98ffffffff0800000000000000
+      internalID: -1982600475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_LeftHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5ad471000000000800000000000000
+      internalID: 390964677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_LeftHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb227d69ffffffff0800000000000000
+      internalID: -1764285764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LemonMelonCookie_Miku_LeftHand_Little
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bffdcdffffffff0800000000000000
+      internalID: -589300864
       vertices: []
       indices: 
       edges: []
@@ -578,12 +842,24 @@ TextureImporter:
       Character_LemonMelonCookie_Miku_LeftBackHair: 1550441972912035327
       Character_LemonMelonCookie_Miku_LeftFoot: 3757775218696842611
       Character_LemonMelonCookie_Miku_LeftHand: -8313547363800038381
+      Character_LemonMelonCookie_Miku_LeftHand_Back: 1223163496
+      Character_LemonMelonCookie_Miku_LeftHand_Index: -1982600475
+      Character_LemonMelonCookie_Miku_LeftHand_Little: -589300864
+      Character_LemonMelonCookie_Miku_LeftHand_Middle: 390964677
+      Character_LemonMelonCookie_Miku_LeftHand_Ring: -1764285764
+      Character_LemonMelonCookie_Miku_LeftHand_Thumb: -898493167
       Character_LemonMelonCookie_Miku_LeftLeg: 4736317611770456674
       Character_LemonMelonCookie_Miku_LowerBody: -4237345977224969900
       Character_LemonMelonCookie_Miku_RightArm: -5378928442692169511
       Character_LemonMelonCookie_Miku_RightBackHair: -607699074895399093
       Character_LemonMelonCookie_Miku_RightFoot: 8694852156005802445
       Character_LemonMelonCookie_Miku_RightHand: -6550262906501525583
+      Character_LemonMelonCookie_Miku_RightHand_Back: -1539648589
+      Character_LemonMelonCookie_Miku_RightHand_Index: -1475471011
+      Character_LemonMelonCookie_Miku_RightHand_Little: 1828869102
+      Character_LemonMelonCookie_Miku_RightHand_Middle: -878417928
+      Character_LemonMelonCookie_Miku_RightHand_Ring: 1647400205
+      Character_LemonMelonCookie_Miku_RightHand_Thumb: -521792445
       Character_LemonMelonCookie_Miku_RightLeg: -6911839219317400830
       Character_LemonMelonCookie_Miku_UpperBody: 4074543963741727550
   mipmapLimitGroupName: 

@@ -47,7 +47,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: 0, y: -1}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -312,28 +312,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Teto_RightHand
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.46875, y: 0.59375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f49399387fcded00800000000000000
-      internalID: 1003686407242487028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Character_Teto_LeftArm
       rect:
         serializedVersion: 2
@@ -351,28 +329,6 @@ TextureImporter:
       bones: []
       spriteID: 1188976068cf358f0800000000000000
       internalID: -552820676671993839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Teto_LeftHand
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.53125, y: 0.59375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 179f18cfbc822b2d0800000000000000
-      internalID: -3264501923310339727
       vertices: []
       indices: 
       edges: []
@@ -553,6 +509,314 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Character_Teto_RightHand
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f49399387fcded00800000000000000
+      internalID: 1003686407242487028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_LeftHand
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179f18cfbc822b2d0800000000000000
+      internalID: -3264501923310339727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_RightHand_Back
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2780f8ffffffff0800000000000000
+      internalID: -1895271775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_RightHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88e9e8effffffff0800000000000000
+      internalID: -387323762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_RightHand_Index
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc2b05affffffff0800000000000000
+      internalID: -1525994256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_RightHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fac034affffffff0800000000000000
+      internalID: -1540306186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_RightHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01e6694cffffffff0800000000000000
+      internalID: -996774384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_RightHand_Little
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94790c99ffffffff0800000000000000
+      internalID: -1715431607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_LeftHand_Back
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9eaaaaffffffff0800000000000000
+      internalID: -1431639601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_LeftHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfe4630000000000800000000000000
+      internalID: 56946647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_LeftHand_Index
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d746fe0000000000800000000000000
+      internalID: 251021269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_LeftHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7e4dfdffffffff0800000000000000
+      internalID: -539695112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_LeftHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31521c5fffffffff0800000000000000
+      internalID: -171891437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Teto_LeftHand_Little
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364b0474000000000800000000000000
+      internalID: 1195422819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -578,12 +842,24 @@ TextureImporter:
       Character_Teto_LeftBackHair: -2056381968
       Character_Teto_LeftFoot: 7965649754148717440
       Character_Teto_LeftHand: -3264501923310339727
+      Character_Teto_LeftHand_Back: -1431639601
+      Character_Teto_LeftHand_Index: 251021269
+      Character_Teto_LeftHand_Little: 1195422819
+      Character_Teto_LeftHand_Middle: -539695112
+      Character_Teto_LeftHand_Ring: -171891437
+      Character_Teto_LeftHand_Thumb: 56946647
       Character_Teto_LeftLeg: -2526891145173570685
       Character_Teto_LowerBody: 5678425600075457898
       Character_Teto_RightArm: -6783072216035095552
       Character_Teto_RightBackHair: 764129761
       Character_Teto_RightFoot: -8594824709019268803
       Character_Teto_RightHand: 1003686407242487028
+      Character_Teto_RightHand_Back: -1895271775
+      Character_Teto_RightHand_Index: -1525994256
+      Character_Teto_RightHand_Little: -1715431607
+      Character_Teto_RightHand_Middle: -1540306186
+      Character_Teto_RightHand_Ring: -996774384
+      Character_Teto_RightHand_Thumb: -387323762
       Character_Teto_RightLeg: 6415990850421518428
       Character_Teto_UpperBody: 7514307237738508175
   mipmapLimitGroupName: 

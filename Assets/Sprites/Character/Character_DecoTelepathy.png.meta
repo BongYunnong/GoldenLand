@@ -47,7 +47,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: 0, y: -1}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -312,28 +312,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_DecoTelepathy_RightHand
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.46875, y: 0.59375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a34586f5d073543f0800000000000000
-      internalID: -917266418525252550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Character_DecoTelepathy_LeftArm
       rect:
         serializedVersion: 2
@@ -351,28 +329,6 @@ TextureImporter:
       bones: []
       spriteID: 2c8d76e90b8a410d0800000000000000
       internalID: -3452949537761011518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_DecoTelepathy_LeftHand
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.53125, y: 0.59375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee3cd5f0040163ca0800000000000000
-      internalID: -6037620383121816594
       vertices: []
       indices: 
       edges: []
@@ -553,6 +509,314 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_RightHand
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34586f5d073543f0800000000000000
+      internalID: -917266418525252550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_LeftHand
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3cd5f0040163ca0800000000000000
+      internalID: -6037620383121816594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_RightHand_Back
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68a3236000000000800000000000000
+      internalID: 1663281258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_RightHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717adcceffffffff0800000000000000
+      internalID: -322066665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_RightHand_Index
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9794a26000000000800000000000000
+      internalID: 1654953883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_RightHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3e8feeffffffff0800000000000000
+      internalID: -285678671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_RightHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df67112cffffffff0800000000000000
+      internalID: -1039042819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_RightHand_Little
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f4f3c7000000000800000000000000
+      internalID: 2084523894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_LeftHand_Back
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533494e6000000000800000000000000
+      internalID: 1850295093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_LeftHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30562f0000000000800000000000000
+      internalID: 254169148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_LeftHand_Index
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c673b9affffffff0800000000000000
+      internalID: -1447856440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_LeftHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b20db0000000000800000000000000
+      internalID: 198191885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_LeftHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970698eaffffffff0800000000000000
+      internalID: -1366728583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_DecoTelepathy_LeftHand_Little
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d97fd2000000000800000000000000
+      internalID: 771202434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -578,12 +842,24 @@ TextureImporter:
       Character_DecoTelepathy_LeftBackHair: 546065565
       Character_DecoTelepathy_LeftFoot: 5700816624729307831
       Character_DecoTelepathy_LeftHand: -6037620383121816594
+      Character_DecoTelepathy_LeftHand_Back: 1850295093
+      Character_DecoTelepathy_LeftHand_Index: -1447856440
+      Character_DecoTelepathy_LeftHand_Little: 771202434
+      Character_DecoTelepathy_LeftHand_Middle: 198191885
+      Character_DecoTelepathy_LeftHand_Ring: -1366728583
+      Character_DecoTelepathy_LeftHand_Thumb: 254169148
       Character_DecoTelepathy_LeftLeg: -2198481979394461096
       Character_DecoTelepathy_LowerBody: -6485228621085946732
       Character_DecoTelepathy_RightArm: 2290604882322334890
       Character_DecoTelepathy_RightBackHair: 1594368576
       Character_DecoTelepathy_RightFoot: 2893431929235910769
       Character_DecoTelepathy_RightHand: -917266418525252550
+      Character_DecoTelepathy_RightHand_Back: 1663281258
+      Character_DecoTelepathy_RightHand_Index: 1654953883
+      Character_DecoTelepathy_RightHand_Little: 2084523894
+      Character_DecoTelepathy_RightHand_Middle: -285678671
+      Character_DecoTelepathy_RightHand_Ring: -1039042819
+      Character_DecoTelepathy_RightHand_Thumb: -322066665
       Character_DecoTelepathy_RightLeg: -8640622651815990216
       Character_DecoTelepathy_UpperBody: 4549465030911882657
   mipmapLimitGroupName: 

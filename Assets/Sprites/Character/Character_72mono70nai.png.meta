@@ -47,7 +47,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: 0, y: -1}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -312,28 +312,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_72mono70nai_RightHand
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.46875, y: 0.59375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b5c4f3506ac78ca0800000000000000
-      internalID: -6014616262255786573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Character_72mono70nai_LeftArm
       rect:
         serializedVersion: 2
@@ -351,28 +329,6 @@ TextureImporter:
       bones: []
       spriteID: 2bc1421205842f440800000000000000
       internalID: 4968112847933676722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_72mono70nai_LeftHand
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.53125, y: 0.59375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0600d507df342b20800000000000000
-      internalID: 3108679835540522506
       vertices: []
       indices: 
       edges: []
@@ -553,6 +509,314 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_RightHand
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5c4f3506ac78ca0800000000000000
+      internalID: -6014616262255786573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_LeftHand
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0600d507df342b20800000000000000
+      internalID: 3108679835540522506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_RightHand_Back
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8643d3000000000800000000000000
+      internalID: 1026844918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_RightHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21421c9ffffffff0800000000000000
+      internalID: -1676525265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_RightHand_Index
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f902e51000000000800000000000000
+      internalID: 367135224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_RightHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ad5fa6000000000800000000000000
+      internalID: 1794497134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_RightHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82f3ae1000000000800000000000000
+      internalID: 514060940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_RightHand_Little
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffd20afffffffff0800000000000000
+      internalID: -100474896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_LeftHand_Back
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429748bcffffffff0800000000000000
+      internalID: -880510684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_LeftHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d0b706dffffffff0800000000000000
+      internalID: -704139053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_LeftHand_Index
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc584543000000000800000000000000
+      internalID: 877954511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_LeftHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e56025cffffffff0800000000000000
+      internalID: -987732512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_LeftHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b6497bffffffff0800000000000000
+      internalID: -1215009965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_72mono70nai_LeftHand_Little
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b7037affffffff0800000000000000
+      internalID: -1489994883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -569,6 +833,10 @@ TextureImporter:
     nameFileIdTable:
       Character_72mono70nai_0: 814586246
       Character_72mono70nai_1: -7943752
+      Character_72mono70nai_2: 1815849519
+      Character_72mono70nai_3: -1539269863
+      Character_72mono70nai_4: 896476818
+      Character_72mono70nai_5: -1836941074
       Character_72mono70nai_Accessory: 9203897620643512732
       Character_72mono70nai_BackHair: 1974061828473879975
       Character_72mono70nai_BackHat: 6515968357972153260
@@ -580,12 +848,24 @@ TextureImporter:
       Character_72mono70nai_LeftBackHair: -489273051
       Character_72mono70nai_LeftFoot: -8574625894892756610
       Character_72mono70nai_LeftHand: 3108679835540522506
+      Character_72mono70nai_LeftHand_Back: -880510684
+      Character_72mono70nai_LeftHand_Index: 877954511
+      Character_72mono70nai_LeftHand_Little: -1489994883
+      Character_72mono70nai_LeftHand_Middle: -987732512
+      Character_72mono70nai_LeftHand_Ring: -1215009965
+      Character_72mono70nai_LeftHand_Thumb: -704139053
       Character_72mono70nai_LeftLeg: -8174735957098766276
       Character_72mono70nai_LowerBody: 715623412592549674
       Character_72mono70nai_RightArm: -1283505211788569552
       Character_72mono70nai_RightBackHair: -1169531073
       Character_72mono70nai_RightFoot: -3624177472057461122
       Character_72mono70nai_RightHand: -6014616262255786573
+      Character_72mono70nai_RightHand_Back: 1026844918
+      Character_72mono70nai_RightHand_Index: 367135224
+      Character_72mono70nai_RightHand_Little: -100474896
+      Character_72mono70nai_RightHand_Middle: 1794497134
+      Character_72mono70nai_RightHand_Ring: 514060940
+      Character_72mono70nai_RightHand_Thumb: -1676525265
       Character_72mono70nai_RightLeg: -5406263257503790135
       Character_72mono70nai_UpperBody: -4382822917364039969
   mipmapLimitGroupName: 

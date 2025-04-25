@@ -47,7 +47,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: 0, y: -1}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -312,28 +312,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_LagTrain_RightHand
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.46875, y: 0.59375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2834df706803579f0800000000000000
-      internalID: -471417233772559486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Character_LagTrain_LeftArm
       rect:
         serializedVersion: 2
@@ -351,28 +329,6 @@ TextureImporter:
       bones: []
       spriteID: 9dead91b5fe8eeeb0800000000000000
       internalID: -4688652976148074791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_LagTrain_LeftHand
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.53125, y: 0.59375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d714a116403dc45d0800000000000000
-      internalID: -3076852429638450819
       vertices: []
       indices: 
       edges: []
@@ -553,6 +509,314 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_RightHand
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2834df706803579f0800000000000000
+      internalID: -471417233772559486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_LeftHand
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d714a116403dc45d0800000000000000
+      internalID: -3076852429638450819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_RightHand_Back
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbf1d45000000000800000000000000
+      internalID: 1423047603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_RightHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b06cc2000000000800000000000000
+      internalID: 751176554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_RightHand_Index
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d84a9d6000000000800000000000000
+      internalID: 1838827728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_RightHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cafcda9ffffffff0800000000000000
+      internalID: -1696793915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_RightHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa37e5e1000000000800000000000000
+      internalID: 509506474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_RightHand_Little
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b89cd4000000000800000000000000
+      internalID: 1305054082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_LeftHand_Back
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b87cf7000000000800000000000000
+      internalID: 2143783742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_LeftHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71693566000000000800000000000000
+      internalID: 1716753943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_LeftHand_Index
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e188eb5bffffffff0800000000000000
+      internalID: -1245804514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_LeftHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1ae24affffffff0800000000000000
+      internalID: -1540447836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_LeftHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dd8112000000000800000000000000
+      internalID: 555277667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_LagTrain_LeftHand_Little
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232046f4000000000800000000000000
+      internalID: 1331954226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -578,12 +842,24 @@ TextureImporter:
       Character_LagTrain_LeftBackHair: -1211286135
       Character_LagTrain_LeftFoot: 5444029501440416460
       Character_LagTrain_LeftHand: -3076852429638450819
+      Character_LagTrain_LeftHand_Back: 2143783742
+      Character_LagTrain_LeftHand_Index: -1245804514
+      Character_LagTrain_LeftHand_Little: 1331954226
+      Character_LagTrain_LeftHand_Middle: -1540447836
+      Character_LagTrain_LeftHand_Ring: 555277667
+      Character_LagTrain_LeftHand_Thumb: 1716753943
       Character_LagTrain_LeftLeg: 3699036929883337961
       Character_LagTrain_LowerBody: -5429384322654541768
       Character_LagTrain_RightArm: 2957470226078107213
       Character_LagTrain_RightBackHair: -33867376
       Character_LagTrain_RightFoot: 1019944294871430474
       Character_LagTrain_RightHand: -471417233772559486
+      Character_LagTrain_RightHand_Back: 1423047603
+      Character_LagTrain_RightHand_Index: 1838827728
+      Character_LagTrain_RightHand_Little: 1305054082
+      Character_LagTrain_RightHand_Middle: -1696793915
+      Character_LagTrain_RightHand_Ring: 509506474
+      Character_LagTrain_RightHand_Thumb: 751176554
       Character_LagTrain_RightLeg: 698849013834822285
       Character_LagTrain_UpperBody: 2694486436212904996
   mipmapLimitGroupName: 

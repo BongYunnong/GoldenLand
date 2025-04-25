@@ -40,18 +40,38 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_UpperBody
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightArm
-    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightHand
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftArm
-    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftHand
     Effects: []
   - ID: LowerBody_Miku_001
-    EquipmentType: 8
+    EquipmentType: 10
     Sprites:
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LowerBody
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightLeg
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightFoot
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftLeg
     - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftFoot
+    Effects: []
+  - ID: LeftHand_Miku_001
+    EquipmentType: 9
+    Sprites:
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftHand
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftHand_Back
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftHand_Thumb
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftHand_Index
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftHand_Middle
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftHand_Ring
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_LeftHand_Little
+    Effects: []
+  - ID: RightHand_Miku_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightHand
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightHand_Back
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightHand_Thumb
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightHand_Index
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightHand_Middle
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightHand_Ring
+    - Assets/Sprites/Character/Character_Miku.png=Character_Miku_RightHand_Little
     Effects: []
   - ID: BackHair_72mono70nai_001
     EquipmentType: 1
@@ -78,18 +98,38 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_UpperBody
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightArm
-    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightHand
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftArm
-    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftHand
     Effects: []
   - ID: LowerBody_72mono70nai_001
-    EquipmentType: 8
+    EquipmentType: 10
     Sprites:
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LowerBody
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightLeg
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightFoot
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftLeg
     - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftFoot
+    Effects: []
+  - ID: LeftHand_72mono70nai_001
+    EquipmentType: 9
+    Sprites:
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftHand
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftHand_Back
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftHand_Thumb
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftHand_Index
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftHand_Middle
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftHand_Ring
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_LeftHand_Little
+    Effects: []
+  - ID: RightHand_72mono70nai_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightHand
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightHand_Back
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightHand_Thumb
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightHand_Index
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightHand_Middle
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightHand_Ring
+    - Assets/Sprites/Character/Character_72mono70nai.png=Character_72mono70nai_RightHand_Little
     Effects: []
   - ID: Hair_Teto_001
     EquipmentType: 0
@@ -118,18 +158,38 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_UpperBody
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightArm
-    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightHand
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftArm
-    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftHand
     Effects: []
   - ID: LowerBody_Teto_001
-    EquipmentType: 8
+    EquipmentType: 10
     Sprites:
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LowerBody
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightLeg
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightFoot
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftLeg
     - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftFoot
+    Effects: []
+  - ID: LeftHand_Teto_001
+    EquipmentType: 9
+    Sprites:
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftHand
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftHand_Back
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftHand_Thumb
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftHand_Index
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftHand_Middle
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftHand_Ring
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_LeftHand_Little
+    Effects: []
+  - ID: RightHand_Teto_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightHand
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightHand_Back
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightHand_Thumb
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightHand_Index
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightHand_Middle
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightHand_Ring
+    - Assets/Sprites/Character/Character_Teto.png=Character_Teto_RightHand_Little
     Effects: []
   - ID: Hair_Neru_001
     EquipmentType: 0
@@ -158,18 +218,38 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_UpperBody
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightArm
-    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightHand
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftArm
-    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftHand
     Effects: []
   - ID: LowerBody_Neru_001
-    EquipmentType: 8
+    EquipmentType: 10
     Sprites:
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LowerBody
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightLeg
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightFoot
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftLeg
     - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftFoot
+    Effects: []
+  - ID: LeftHand_Neru_001
+    EquipmentType: 9
+    Sprites:
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftHand
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftHand_Back
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftHand_Thumb
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftHand_Index
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftHand_Middle
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftHand_Ring
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_LeftHand_Little
+    Effects: []
+  - ID: RightHand_Neru_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightHand
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightHand_Back
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightHand_Thumb
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightHand_Index
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightHand_Middle
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightHand_Ring
+    - Assets/Sprites/Character/Character_Neru.png=Character_Neru_RightHand_Little
     Effects: []
   - ID: Hair_DecoTelepathy_001
     EquipmentType: 0
@@ -198,18 +278,38 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_UpperBody
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightArm
-    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightHand
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftArm
-    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftHand
     Effects: []
   - ID: LowerBody_DecoTelepathy_001
-    EquipmentType: 8
+    EquipmentType: 10
     Sprites:
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LowerBody
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightLeg
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightFoot
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftLeg
     - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftFoot
+    Effects: []
+  - ID: LeftHand_DecoTelepathy_001
+    EquipmentType: 9
+    Sprites:
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftHand
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftHand_Back
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftHand_Thumb
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftHand_Index
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftHand_Middle
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftHand_Ring
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_LeftHand_Little
+    Effects: []
+  - ID: RightHand_DecoTelepathy_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightHand
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightHand_Back
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightHand_Thumb
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightHand_Index
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightHand_Middle
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightHand_Ring
+    - Assets/Sprites/Character/Character_DecoTelepathy.png=Character_DecoTelepathy_RightHand_Little
     Effects: []
   - ID: Hair_LagTrain_001
     EquipmentType: 0
@@ -238,18 +338,38 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_UpperBody
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightArm
-    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightHand
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftArm
-    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftHand
     Effects: []
   - ID: LowerBody_LagTrain_001
-    EquipmentType: 8
+    EquipmentType: 10
     Sprites:
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LowerBody
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightLeg
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightFoot
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftLeg
     - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftFoot
+    Effects: []
+  - ID: LeftHand_LagTrain_001
+    EquipmentType: 9
+    Sprites:
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftHand
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftHand_Back
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftHand_Thumb
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftHand_Index
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftHand_Middle
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftHand_Ring
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_LeftHand_Little
+    Effects: []
+  - ID: RightHand_LagTrain_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightHand
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightHand_Back
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightHand_Thumb
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightHand_Index
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightHand_Middle
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightHand_Ring
+    - Assets/Sprites/Character/Character_LagTrain.png=Character_LagTrain_RightHand_Little
     Effects: []
   - ID: Hair_LemonMelonCookie_001
     EquipmentType: 0
@@ -283,18 +403,38 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_UpperBody
     - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightArm
-    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightHand
     - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftArm
-    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftHand
     Effects: []
   - ID: LowerBody_LemonMelonCookie_001
-    EquipmentType: 8
+    EquipmentType: 10
     Sprites:
     - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LowerBody
     - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightLeg
     - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightFoot
     - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftLeg
     - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftFoot
+    Effects: []
+  - ID: LeftHand_LemonMelonCookie_001
+    EquipmentType: 9
+    Sprites:
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftHand
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftHand_Back
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftHand_Thumb
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftHand_Index
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftHand_Middle
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftHand_Ring
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_LeftHand_Little
+    Effects: []
+  - ID: RightHand_LemonMelonCookie_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightHand
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightHand_Back
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightHand_Thumb
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightHand_Index
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightHand_Middle
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightHand_Ring
+    - Assets/Sprites/Character/Character_LemonMelonCookie_Miku.png=Character_LemonMelonCookie_Miku_RightHand_Little
     Effects: []
   - ID: Hair_Odotchina_Miku_001
     EquipmentType: 0
@@ -328,18 +468,38 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_UpperBody
     - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightArm
-    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightHand
     - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftArm
-    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftHand
     Effects: []
   - ID: LowerBody_Odotchina_Miku_001
-    EquipmentType: 8
+    EquipmentType: 10
     Sprites:
     - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LowerBody
     - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightLeg
     - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightFoot
     - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftLeg
     - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftFoot
+    Effects: []
+  - ID: LeftHand_Odotchina_Miku_001
+    EquipmentType: 9
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftHand
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftHand_Back
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftHand_Thumb
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftHand_Index
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftHand_Middle
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftHand_Ring
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_LeftHand_Little
+    Effects: []
+  - ID: RightHand_Odotchina_Miku_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightHand
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightHand_Back
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightHand_Thumb
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightHand_Index
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightHand_Middle
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightHand_Ring
+    - Assets/Sprites/Character/Character_Odotchina_Miku.png=Character_Odotchina_Miku_RightHand_Little
     Effects: []
   - ID: Hair_Odotchina_Teto_001
     EquipmentType: 0
@@ -373,16 +533,36 @@ MonoBehaviour:
     Sprites:
     - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_UpperBody
     - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightArm
-    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightHand
     - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftArm
-    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftHand
     Effects: []
   - ID: LowerBody_Odotchina_Teto_001
-    EquipmentType: 8
+    EquipmentType: 10
     Sprites:
     - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LowerBody
     - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightLeg
     - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightFoot
     - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftLeg
     - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftFoot
+    Effects: []
+  - ID: LeftHand_Odotchina_Teto_001
+    EquipmentType: 9
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftHand
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftHand_Back
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftHand_Thumb
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftHand_Index
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftHand_Middle
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftHand_Ring
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_LeftHand_Little
+    Effects: []
+  - ID: RightHand_Odotchina_Teto_001
+    EquipmentType: 8
+    Sprites:
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightHand
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightHand_Back
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightHand_Thumb
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightHand_Index
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightHand_Middle
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightHand_Ring
+    - Assets/Sprites/Character/Character_Odotchina_Teto.png=Character_Odotchina_Teto_RightHand_Little
     Effects: []

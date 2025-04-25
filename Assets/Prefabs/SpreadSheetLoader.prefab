@@ -50,7 +50,7 @@ MonoBehaviour:
     Range: A1:D
     SheetID: 0
   - SheetName: EquipmentPresetDataSet
-    Range: A1:L
+    Range: A1:N
     SheetID: 1181959853
   - SheetName: BookDataSet
     Range: A1:I

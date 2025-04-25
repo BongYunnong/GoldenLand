@@ -552,7 +552,6 @@ public class PlayerController : SingletonMonoBehavior<PlayerController>
         if (t >= 0f)
         {
             Vector3 hitPoint = ray.origin + ray.direction * t;
-            Debug.Log("Hit point on virtual ground: " + hitPoint);
             return hitPoint;
         }
         return Vector3.zero;

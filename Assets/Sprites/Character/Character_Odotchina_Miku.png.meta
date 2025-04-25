@@ -47,7 +47,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: 0, y: -1}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -166,7 +166,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 9
-      pivot: {x: 0.625, y: 0.78125}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,7 +188,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 9
-      pivot: {x: 0.34375, y: 0.78125}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,7 +276,7 @@ TextureImporter:
         width: 64
         height: 32
       alignment: 9
-      pivot: {x: 0.5, y: -0.125}
+      pivot: {x: 0.5, y: 0.21875}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,7 +334,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Odotchina_Miku_BackHat
+      name: Character_Odotchina_Miku_Hat
       rect:
         serializedVersion: 2
         x: 64
@@ -349,14 +349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ff5f0e2c2109de30800000000000000
-      internalID: 4528652189560692725
+      spriteID: 4a31ecb72132ba1a0800000000000000
+      internalID: -6797300650292145244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Odotchina_Miku_Hat
+      name: Character_Odotchina_Miku_BackHat
       rect:
         serializedVersion: 2
         x: 64
@@ -371,8 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a31ecb72132ba1a0800000000000000
-      internalID: -6797300650292145244
+      spriteID: 5ff5f0e2c2109de30800000000000000
+      internalID: 4528652189560692725
       vertices: []
       indices: 
       edges: []
@@ -404,11 +404,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
-        width: 32
-        height: 32
+        y: 80
+        width: 16
+        height: 16
       alignment: 9
-      pivot: {x: 0.46875, y: 0.59375}
+      pivot: {x: 0.5, y: 0.6875}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -417,6 +417,138 @@ TextureImporter:
       bones: []
       spriteID: e75a23129a5abb320800000000000000
       internalID: 2574833757797393790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_RightHand_Back
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1982532000000000800000000000000
+      internalID: 592611612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_RightHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7fcd2daffffffff0800000000000000
+      internalID: -1389506693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_RightHand_Index
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f959e21000000000800000000000000
+      internalID: 317282809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_RightHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb3de9fffffffff0800000000000000
+      internalID: -101893197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_RightHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95520129ffffffff0800000000000000
+      internalID: -1844435623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_RightHand_Little
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d95fe08ffffffff0800000000000000
+      internalID: -2131797545
       vertices: []
       indices: 
       edges: []
@@ -448,11 +580,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 64
-        width: 32
-        height: 32
+        y: 80
+        width: 16
+        height: 16
       alignment: 9
-      pivot: {x: 0.53125, y: 0.59375}
+      pivot: {x: 0.5, y: 0.6875}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -461,6 +593,138 @@ TextureImporter:
       bones: []
       spriteID: b2db700e7cf9b6980800000000000000
       internalID: -8544560187199472341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_LeftHand_Back
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba0f0a3000000000800000000000000
+      internalID: 974064306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_LeftHand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313478e8ffffffff0800000000000000
+      internalID: -1903738093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_LeftHand_Index
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00cdaa9ffffffff0800000000000000
+      internalID: -1699889137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_LeftHand_Middle
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eece948ffffffff0800000000000000
+      internalID: -2069967128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_LeftHand_Ring
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db88afa8ffffffff0800000000000000
+      internalID: -1963292483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Odotchina_Miku_LeftHand_Little
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 72
+        width: 1
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d298256bffffffff0800000000000000
+      internalID: -1236104915
       vertices: []
       indices: 
       edges: []
@@ -578,12 +842,24 @@ TextureImporter:
       Character_Odotchina_Miku_LeftBackHair: -1360546849699148202
       Character_Odotchina_Miku_LeftFoot: -4049740354857434427
       Character_Odotchina_Miku_LeftHand: -8544560187199472341
+      Character_Odotchina_Miku_LeftHand_Back: 974064306
+      Character_Odotchina_Miku_LeftHand_Index: -1699889137
+      Character_Odotchina_Miku_LeftHand_Little: -1236104915
+      Character_Odotchina_Miku_LeftHand_Middle: -2069967128
+      Character_Odotchina_Miku_LeftHand_Ring: -1963292483
+      Character_Odotchina_Miku_LeftHand_Thumb: -1903738093
       Character_Odotchina_Miku_LeftLeg: -1750049243309470456
       Character_Odotchina_Miku_LowerBody: -6995050349509545351
       Character_Odotchina_Miku_RightArm: 497040294067742659
       Character_Odotchina_Miku_RightBackHair: -5717080199614794975
       Character_Odotchina_Miku_RightFoot: 4724426485188276277
       Character_Odotchina_Miku_RightHand: 2574833757797393790
+      Character_Odotchina_Miku_RightHand_Back: 592611612
+      Character_Odotchina_Miku_RightHand_Index: 317282809
+      Character_Odotchina_Miku_RightHand_Little: -2131797545
+      Character_Odotchina_Miku_RightHand_Middle: -101893197
+      Character_Odotchina_Miku_RightHand_Ring: -1844435623
+      Character_Odotchina_Miku_RightHand_Thumb: -1389506693
       Character_Odotchina_Miku_RightLeg: 1555961859150044068
       Character_Odotchina_Miku_UpperBody: -7311276325753630659
   mipmapLimitGroupName: 

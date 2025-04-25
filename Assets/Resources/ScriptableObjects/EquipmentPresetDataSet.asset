@@ -25,6 +25,8 @@ MonoBehaviour:
     LowerBody: LowerBody_Miku_001
     BackStuff: 
     HandStuff: 
+    LeftHand: LeftHand_Miku_001
+    RightHand: RightHand_Miku_001
   - ID: 72mono70nai_001
     Hair: Hair_72mono70nai_001
     BackHair: BackHair_72mono70nai_001
@@ -37,6 +39,8 @@ MonoBehaviour:
     LowerBody: LowerBody_72mono70nai_001
     BackStuff: 
     HandStuff: 
+    LeftHand: LeftHand_72mono70nai_001
+    RightHand: RightHand_72mono70nai_001
   - ID: Teto_001
     Hair: Hair_Teto_001
     BackHair: BackHair_Teto_001
@@ -49,6 +53,8 @@ MonoBehaviour:
     LowerBody: LowerBody_Teto_001
     BackStuff: 
     HandStuff: 
+    LeftHand: LeftHand_Teto_001
+    RightHand: RightHand_Teto_001
   - ID: Neru_001
     Hair: Hair_Neru_001
     BackHair: BackHair_Neru_001
@@ -61,6 +67,8 @@ MonoBehaviour:
     LowerBody: LowerBody_Neru_001
     BackStuff: 
     HandStuff: 
+    LeftHand: LeftHand_Neru_001
+    RightHand: RightHand_Neru_001
   - ID: DecoTelepathy_001
     Hair: Hair_DecoTelepathy_001
     BackHair: BackHair_DecoTelepathy_001
@@ -73,6 +81,8 @@ MonoBehaviour:
     LowerBody: LowerBody_DecoTelepathy_001
     BackStuff: 
     HandStuff: 
+    LeftHand: LeftHand_DecoTelepathy_001
+    RightHand: RightHand_DecoTelepathy_001
   - ID: LagTrain_001
     Hair: Hair_LagTrain_001
     BackHair: BackHair_LagTrain_001
@@ -85,6 +95,8 @@ MonoBehaviour:
     LowerBody: LowerBody_LagTrain_001
     BackStuff: 
     HandStuff: 
+    LeftHand: LeftHand_LagTrain_001
+    RightHand: RightHand_LagTrain_001
   - ID: LemonMelonCookie_001
     Hair: Hair_LemonMelonCookie_001
     BackHair: BackHair_LemonMelonCookie_001
@@ -97,6 +109,8 @@ MonoBehaviour:
     LowerBody: LowerBody_LemonMelonCookie_001
     BackStuff: 
     HandStuff: 
+    LeftHand: LeftHand_LemonMelonCookie_001
+    RightHand: RightHand_LemonMelonCookie_001
   - ID: Odotchina_Miku_001
     Hair: Hair_Odotchina_Miku_001
     BackHair: BackHair_Odotchina_Miku_001
@@ -109,6 +123,8 @@ MonoBehaviour:
     LowerBody: LowerBody_Odotchina_Miku_001
     BackStuff: 
     HandStuff: 
+    LeftHand: LeftHand_Odotchina_Miku_001
+    RightHand: RightHand_Odotchina_Miku_001
   - ID: Odotchina_Teto_001
     Hair: Hair_Odotchina_Teto_001
     BackHair: BackHair_Odotchina_Teto_001
@@ -121,3 +137,5 @@ MonoBehaviour:
     LowerBody: LowerBody_Odotchina_Teto_001
     BackStuff: 
     HandStuff: 
+    LeftHand: LeftHand_Odotchina_Teto_001
+    RightHand: RightHand_Odotchina_Teto_001

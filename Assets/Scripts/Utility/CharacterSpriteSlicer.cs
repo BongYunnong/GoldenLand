@@ -86,9 +86,23 @@ public class CharacterSpriteSlicer
 		SliceInfos.Add("BackHat", new SpriteSliceInfo("BackHat", new Rect(64, 128, 64, 32), new Vector2(32, 16)));
 		
 		SliceInfos.Add("RightArm", new SpriteSliceInfo("RightArm", new Rect(64, 96, 32, 32), new Vector2(16, 22)));
-		SliceInfos.Add("RightHand", new SpriteSliceInfo("RightHand", new Rect(64, 64, 32, 32), new Vector2(15, 19)));
+		SliceInfos.Add("RightHand", new SpriteSliceInfo("RightHand", new Rect(64, 80, 16, 16), new Vector2(8, 11)));
+		SliceInfos.Add("RightHand_Back", new SpriteSliceInfo("RightHand_Back", new Rect(80, 80, 16, 16), new Vector2(8, 11)));
+		SliceInfos.Add("RightHand_Thumb", new SpriteSliceInfo("RightHand_Thumb", new Rect(73, 72, 1, 2), new Vector2(0.5f, 2)));
+		SliceInfos.Add("RightHand_Index", new SpriteSliceInfo("RightHand_Index", new Rect(76, 72, 1, 2), new Vector2(0.5f, 2)));
+		SliceInfos.Add("RightHand_Middle", new SpriteSliceInfo("RightHand_Middle", new Rect(79, 72, 1, 2), new Vector2(0.5f, 2)));
+		SliceInfos.Add("RightHand_Ring", new SpriteSliceInfo("RightHand_Ring", new Rect(82, 72, 1, 2), new Vector2(0.5f, 2)));
+		SliceInfos.Add("RightHand_Little", new SpriteSliceInfo("RightHand_Little", new Rect(85, 72, 1, 2), new Vector2(0.5f, 2)));
+		
 		SliceInfos.Add("LeftArm", new SpriteSliceInfo("LeftArm", new Rect(96, 96, 32, 32), new Vector2(16, 22)));
-		SliceInfos.Add("LeftHand", new SpriteSliceInfo("LeftHand", new Rect(96, 64, 32, 32), new Vector2(17, 19)));
+		SliceInfos.Add("LeftHand", new SpriteSliceInfo("LeftHand", new Rect(96, 80, 16, 16), new Vector2(8, 11)));
+		SliceInfos.Add("LeftHand_Back", new SpriteSliceInfo("LeftHand_Back", new Rect(112, 80, 16, 16), new Vector2(8, 11)));
+		SliceInfos.Add("LeftHand_Thumb", new SpriteSliceInfo("LeftHand_Thumb", new Rect(106, 72, 1, 2), new Vector2(0.5f, 2)));
+		SliceInfos.Add("LeftHand_Index", new SpriteSliceInfo("LeftHand_Index", new Rect(109, 72, 1, 2), new Vector2(0.5f, 2)));
+		SliceInfos.Add("LeftHand_Middle", new SpriteSliceInfo("LeftHand_Middle", new Rect(112, 72, 1, 2), new Vector2(0.5f, 2)));
+		SliceInfos.Add("LeftHand_Ring", new SpriteSliceInfo("LeftHand_Ring", new Rect(115, 72, 1, 2), new Vector2(0.5f, 2)));
+		SliceInfos.Add("LeftHand_Little", new SpriteSliceInfo("LeftHand_Little", new Rect(118, 72, 1, 2), new Vector2(0.5f, 2)));
+		
 		SliceInfos.Add("RightLeg", new SpriteSliceInfo("RightLeg", new Rect(64, 32, 32, 32), new Vector2(14, 18)));
 		SliceInfos.Add("RightFoot", new SpriteSliceInfo("RightFoot", new Rect(64, 0, 32, 32), new Vector2(14, 16)));
 		SliceInfos.Add("LeftLeg", new SpriteSliceInfo("LeftLeg", new Rect(96, 32, 32, 32), new Vector2(14, 18)));
@@ -162,9 +176,21 @@ public class CharacterSpriteSlicer
 		equipmentPartDict[EEquipmentType.Robe].Add("Robe_L");
 		equipmentPartDict[EEquipmentType.UpperBody].Add("UpperBody");
 		equipmentPartDict[EEquipmentType.UpperBody].Add("RightArm");
-		equipmentPartDict[EEquipmentType.UpperBody].Add("RightHand");
 		equipmentPartDict[EEquipmentType.UpperBody].Add("LeftArm");
-		equipmentPartDict[EEquipmentType.UpperBody].Add("LeftHand");
+		equipmentPartDict[EEquipmentType.RightHand].Add("RightHand");
+		equipmentPartDict[EEquipmentType.RightHand].Add("RightHand_Back");
+		equipmentPartDict[EEquipmentType.RightHand].Add("RightHand_Thumb");
+		equipmentPartDict[EEquipmentType.RightHand].Add("RightHand_Index");
+		equipmentPartDict[EEquipmentType.RightHand].Add("RightHand_Middle");
+		equipmentPartDict[EEquipmentType.RightHand].Add("RightHand_Ring");
+		equipmentPartDict[EEquipmentType.RightHand].Add("RightHand_Little");
+		equipmentPartDict[EEquipmentType.LeftHand].Add("LeftHand");
+		equipmentPartDict[EEquipmentType.LeftHand].Add("LeftHand_Back");
+		equipmentPartDict[EEquipmentType.LeftHand].Add("LeftHand_Thumb");
+		equipmentPartDict[EEquipmentType.LeftHand].Add("LeftHand_Index");
+		equipmentPartDict[EEquipmentType.LeftHand].Add("LeftHand_Middle");
+		equipmentPartDict[EEquipmentType.LeftHand].Add("LeftHand_Ring");
+		equipmentPartDict[EEquipmentType.LeftHand].Add("LeftHand_Little");
 		equipmentPartDict[EEquipmentType.LowerBody].Add("LowerBody");
 		equipmentPartDict[EEquipmentType.LowerBody].Add("RightLeg");
 		equipmentPartDict[EEquipmentType.LowerBody].Add("LeftLeg");
