@@ -3017,9 +3017,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4236909704603832152, guid: 1eb84fed8b13f8a41b0847da48e49e37, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1664226087, guid: 1ff9eeb9f122b5b418d0eae8a5f761e5, type: 3}
+    - target: {fileID: 4806645122829491473, guid: 1eb84fed8b13f8a41b0847da48e49e37, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1217708835152650024, guid: 1ff9eeb9f122b5b418d0eae8a5f761e5, type: 3}
     - target: {fileID: 6963710647905858037, guid: 1eb84fed8b13f8a41b0847da48e49e37, type: 3}
       propertyPath: m_Name
       value: Hand_L
